@@ -1,7 +1,6 @@
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local TextLabel = Instance.new("TextLabel")
 
 --Properties:
@@ -14,14 +13,11 @@ MainFrame.Parent = ScreenGui
 MainFrame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.227979273, 0, 0.180834621, 0)
-MainFrame.Size = UDim2.new(0, 420, 0, 274)
+MainFrame.Position = UDim2.new(0.261864811, 0, 0.180834621, 0)
+MainFrame.Size = UDim2.new(0.4743976, 0, 0.635239542, 0)
 
 UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = MainFrame
-
-UIAspectRatioConstraint.Parent = MainFrame
-UIAspectRatioConstraint.AspectRatio = 1.533
 
 TextLabel.Parent = MainFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
