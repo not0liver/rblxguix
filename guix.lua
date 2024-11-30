@@ -1,8 +1,8 @@
+local MainGui = Instance.new("ScreenGui")
 local BigBox = Instance.new("Frame")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local CloseButton = Instance.new("TextButton")
-local UIListLayout = Instance.new("UIListLayout")
 local FrameButton = Instance.new("Frame")
 local _1 = Instance.new("TextButton")
 local _2 = Instance.new("TextButton")
@@ -17,8 +17,12 @@ local SmallButton = Instance.new("ImageButton")
 
 --Properties:
 
+MainGui.Name = "MainGui"
+MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 BigBox.Name = "BigBox"
-BigBox.Parent = game.StarterGui.MainGui
+BigBox.Parent = MainGui
 BigBox.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 BigBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 BigBox.BorderSizePixel = 0
@@ -48,19 +52,13 @@ CloseButton.Parent = Frame
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CloseButton.BorderSizePixel = 0
-CloseButton.Position = UDim2.new(0.934685469, 0, 0.602972567, 0)
+CloseButton.Position = UDim2.new(0.934685469, 0, -0.00308805518, 0)
 CloseButton.Size = UDim2.new(0.0653145239, 0, 0.369812489, 0)
 CloseButton.ZIndex = 3
 CloseButton.Font = Enum.Font.SourceSans
 CloseButton.Text = ""
 CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 CloseButton.TextSize = 14.000
-
-UIListLayout.Parent = Frame
-UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
 FrameButton.Name = "FrameButton"
 FrameButton.Parent = BigBox
@@ -165,7 +163,7 @@ Settings.Size = UDim2.new(0.734265804, 0, 0.852885008, 0)
 Settings.Visible = false
 
 SmallButton.Name = "SmallButton"
-SmallButton.Parent = game.StarterGui.MainGui
+SmallButton.Parent = MainGui
 SmallButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SmallButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SmallButton.BorderSizePixel = 0
@@ -176,7 +174,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function WUGWN_fake_script() -- CloseButton.LocalScript 
+local function FBCEIFG_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -187,8 +185,8 @@ local function WUGWN_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(WUGWN_fake_script)()
-local function SVXOMKO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(FBCEIFG_fake_script)()
+local function DRPY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -269,7 +267,7 @@ local function SVXOMKO_fake_script() -- TextButton.LocalScript
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-				task.wait(0.1)
+				task.wait(3)
 				GuiService.SelectedObject = nil
 			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
 				Finished = true
@@ -319,8 +317,8 @@ local function SVXOMKO_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(SVXOMKO_fake_script)()
-local function RUAE_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(DRPY_fake_script)()
+local function ROSDLG_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -331,4 +329,4 @@ local function RUAE_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(RUAE_fake_script)()
+coroutine.wrap(ROSDLG_fake_script)()
