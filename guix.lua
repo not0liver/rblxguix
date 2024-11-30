@@ -41,6 +41,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0063025211, 0, 0, 0)
 TextLabel.Size = UDim2.new(0.239495799, 0, 1, 0)
 TextLabel.Font = Enum.Font.FredokaOne
 TextLabel.Text = "LumineSCRPT"
@@ -174,7 +175,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function FBCEIFG_fake_script() -- CloseButton.LocalScript 
+local function RRUML_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -185,8 +186,8 @@ local function FBCEIFG_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(FBCEIFG_fake_script)()
-local function DRPY_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RRUML_fake_script)()
+local function LWGF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -263,11 +264,11 @@ local function DRPY_fake_script() -- TextButton.LocalScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.3)
+				task.wait(0.2)
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-				task.wait(3)
+				task.wait(0.1)
 				GuiService.SelectedObject = nil
 			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
 				Finished = true
@@ -306,7 +307,7 @@ local function DRPY_fake_script() -- TextButton.LocalScript
 			if Enabled then
 				LocalPlayer.Character.HumanoidRootPart.Position = LoopPosition
 			end
-			task.wait(0.3)
+			task.wait(1)
 		end
 	end)
 	
@@ -317,8 +318,8 @@ local function DRPY_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(DRPY_fake_script)()
-local function ROSDLG_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(LWGF_fake_script)()
+local function WMLVFGL_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -329,4 +330,4 @@ local function ROSDLG_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(ROSDLG_fake_script)()
+coroutine.wrap(WMLVFGL_fake_script)()
