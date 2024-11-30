@@ -175,7 +175,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function TKAJWRP_fake_script() -- CloseButton.LocalScript 
+local function XBLWRNZ_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -186,8 +186,8 @@ local function TKAJWRP_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(TKAJWRP_fake_script)()
-local function VQBVD_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(XBLWRNZ_fake_script)()
+local function EXSNLE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -292,7 +292,7 @@ local function VQBVD_fake_script() -- TextButton.LocalScript
 			if Enabled and not Progress then
 				if Rod then
 					Progress = true
-					task.wait(0.6)
+					task.wait(1)
 					Rod.events.reset:FireServer()
 					Rod.events.cast:FireServer(100.5)
 				end
@@ -307,7 +307,7 @@ local function VQBVD_fake_script() -- TextButton.LocalScript
 			if Enabled then
 				LocalPlayer.Character.HumanoidRootPart.Position = LoopPosition
 			end
-			task.wait(1)
+			task.wait(0.50)
 		end
 	end)
 	
@@ -318,8 +318,8 @@ local function VQBVD_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(VQBVD_fake_script)()
-local function MYHQGY_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(EXSNLE_fake_script)()
+local function FOLVC_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -330,4 +330,4 @@ local function MYHQGY_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(MYHQGY_fake_script)()
+coroutine.wrap(FOLVC_fake_script)()
