@@ -43,7 +43,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 114, 0, 33)
+TextLabel.Size = UDim2.new(0.239495799, 0, 1, 0)
 TextLabel.Font = Enum.Font.FredokaOne
 TextLabel.Text = "LumineSCRPT"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -82,7 +82,7 @@ _1.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 _1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 _1.BorderSizePixel = 0
 _1.Position = UDim2.new(0, 0, 0.0340909101, 0)
-_1.Size = UDim2.new(0, 100, 0, 50)
+_1.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
 _1.Font = Enum.Font.SourceSans
 _1.Text = "Fishing"
 _1.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -94,7 +94,7 @@ _2.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 _2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 _2.BorderSizePixel = 0
 _2.Position = UDim2.new(0, 0, 0.284090906, 0)
-_2.Size = UDim2.new(0, 100, 0, 50)
+_2.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
 _2.Font = Enum.Font.SourceSans
 _2.Text = "Location"
 _2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -106,7 +106,7 @@ _3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 _3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 _3.BorderSizePixel = 0
 _3.Position = UDim2.new(0, 0, 0.534090936, 0)
-_3.Size = UDim2.new(0, 100, 0, 50)
+_3.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
 _3.Font = Enum.Font.SourceSans
 _3.Text = "Miscellaneous"
 _3.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -118,7 +118,7 @@ _4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 _4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 _4.BorderSizePixel = 0
 _4.Position = UDim2.new(0, 0, 0.784090936, 0)
-_4.Size = UDim2.new(0, 100, 0, 50)
+_4.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
 _4.Font = Enum.Font.SourceSans
 _4.Text = "Settings"
 _4.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -142,7 +142,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.214285716, 0, 0.347826093, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Size = UDim2.new(0.571428597, 0, 0.181159422, 0)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Enable Fishing"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -187,7 +187,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function LTKN_fake_script() -- CloseButton.LocalScript 
+local function OFCGA_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -198,8 +198,8 @@ local function LTKN_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(LTKN_fake_script)()
-local function JQGG_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OFCGA_fake_script)()
+local function JERB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -304,7 +304,7 @@ local function JQGG_fake_script() -- TextButton.LocalScript
 			if Enabled and not Progress then
 				if Rod then
 					Progress = true
-					task.wait(0.5)
+					task.wait(1)
 					Rod.events.reset:FireServer()
 					Rod.events.cast:FireServer(100.5)
 				end
@@ -319,7 +319,7 @@ local function JQGG_fake_script() -- TextButton.LocalScript
 			if Enabled then
 				LocalPlayer.Character.HumanoidRootPart.Position = LoopPosition
 			end
-			task.wait(0.75)
+			task.wait(1)
 		end
 	end)
 	
@@ -330,8 +330,8 @@ local function JQGG_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(JQGG_fake_script)()
-local function RRZCFY_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(JERB_fake_script)()
+local function YWFAUFB_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -342,4 +342,4 @@ local function RRZCFY_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(RRZCFY_fake_script)()
+coroutine.wrap(YWFAUFB_fake_script)()
