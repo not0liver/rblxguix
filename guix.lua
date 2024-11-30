@@ -175,7 +175,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function RRUML_fake_script() -- CloseButton.LocalScript 
+local function UQHVO_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -186,8 +186,8 @@ local function RRUML_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(RRUML_fake_script)()
-local function LWGF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(UQHVO_fake_script)()
+local function SFOVX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -292,7 +292,7 @@ local function LWGF_fake_script() -- TextButton.LocalScript
 			if Enabled and not Progress then
 				if Rod then
 					Progress = true
-					task.wait(1)
+	
 					Rod.events.reset:FireServer()
 					Rod.events.cast:FireServer(100.5)
 				end
@@ -318,8 +318,8 @@ local function LWGF_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(LWGF_fake_script)()
-local function WMLVFGL_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(SFOVX_fake_script)()
+local function EOUGTI_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -330,4 +330,4 @@ local function WMLVFGL_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(WMLVFGL_fake_script)()
+coroutine.wrap(EOUGTI_fake_script)()
