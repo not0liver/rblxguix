@@ -175,7 +175,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function XBLWRNZ_fake_script() -- CloseButton.LocalScript 
+local function NDQOLCP_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -186,8 +186,8 @@ local function XBLWRNZ_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(XBLWRNZ_fake_script)()
-local function EXSNLE_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(NDQOLCP_fake_script)()
+local function WYWD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -264,7 +264,7 @@ local function EXSNLE_fake_script() -- TextButton.LocalScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.3)
+				task.wait(0.1)
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
@@ -318,8 +318,8 @@ local function EXSNLE_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(EXSNLE_fake_script)()
-local function FOLVC_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(WYWD_fake_script)()
+local function GKGPRH_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -330,4 +330,4 @@ local function FOLVC_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(FOLVC_fake_script)()
+coroutine.wrap(GKGPRH_fake_script)()
