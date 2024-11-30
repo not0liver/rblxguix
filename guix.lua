@@ -175,7 +175,7 @@ SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function ROIZH_fake_script() -- CloseButton.LocalScript 
+local function TKAJWRP_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
@@ -186,8 +186,8 @@ local function ROIZH_fake_script() -- CloseButton.LocalScript
 		openbtn.Visible = true
 	end)
 end
-coroutine.wrap(ROIZH_fake_script)()
-local function SQXGHOP_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(TKAJWRP_fake_script)()
+local function VQBVD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService('Players')
@@ -264,11 +264,11 @@ local function SQXGHOP_fake_script() -- TextButton.LocalScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-	
+				task.wait(0.3)
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-				task.wait(1)
+				task.wait(0.1)
 				GuiService.SelectedObject = nil
 			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
 				Finished = true
@@ -292,7 +292,7 @@ local function SQXGHOP_fake_script() -- TextButton.LocalScript
 			if Enabled and not Progress then
 				if Rod then
 					Progress = true
-					task.wait(0.2)
+					task.wait(0.6)
 					Rod.events.reset:FireServer()
 					Rod.events.cast:FireServer(100.5)
 				end
@@ -318,8 +318,8 @@ local function SQXGHOP_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(SQXGHOP_fake_script)()
-local function LNTGZKC_fake_script() -- SmallButton.LocalScript 
+coroutine.wrap(VQBVD_fake_script)()
+local function MYHQGY_fake_script() -- SmallButton.LocalScript 
 	local script = Instance.new('LocalScript', SmallButton)
 
 	local frame = script.Parent.Parent.BigBox
@@ -330,4 +330,4 @@ local function LNTGZKC_fake_script() -- SmallButton.LocalScript
 		closebtn.Visible = false
 	end)
 end
-coroutine.wrap(LNTGZKC_fake_script)()
+coroutine.wrap(MYHQGY_fake_script)()
