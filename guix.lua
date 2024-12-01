@@ -52,8 +52,10 @@ local TextLabel_8 = Instance.new("TextLabel")
 local Frame_4 = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local TextButton_7 = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local ImageButton = Instance.new("ImageButton")
 
 --Properties:
@@ -431,7 +433,7 @@ Frame_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_4.BorderSizePixel = 0
 Frame_4.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
-Frame_4.Size = UDim2.new(0, 300, 0, 29)
+Frame_4.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
 UICorner_16.CornerRadius = UDim.new(0, 5)
 UICorner_16.Parent = Frame_4
@@ -442,24 +444,34 @@ TextLabel_9.BackgroundTransparency = 1.000
 TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_9.BorderSizePixel = 0
 TextLabel_9.Position = UDim2.new(0.0333333351, 0, 0, 0)
-TextLabel_9.Size = UDim2.new(0, 101, 0, 29)
+TextLabel_9.Size = UDim2.new(0.336666673, 0, 1, 0)
 TextLabel_9.Font = Enum.Font.FredokaOne
 TextLabel_9.Text = "Smooth Textures"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
 TextLabel_9.TextSize = 15.000
+TextLabel_9.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TextLabel_9
+UITextSizeConstraint_2.MaxTextSize = 15
 
 TextButton_7.Parent = Frame_4
 TextButton_7.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0.856666684, 0, 0.241379306, 0)
-TextButton_7.Size = UDim2.new(0.116999999, 0, 0.462000012, 0)
+TextButton_7.Size = UDim2.new(0.116999991, 0, 0.462000012, 0)
 TextButton_7.Font = Enum.Font.SourceSans
 TextButton_7.Text = ""
 TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
 TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
 
 UICorner_17.Parent = TextButton_7
+
+UITextSizeConstraint_3.Parent = TextButton_7
+UITextSizeConstraint_3.MaxTextSize = 14
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -474,7 +486,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function ESRVEX_fake_script() -- TextButton.LocalScript 
+local function YJXVSGQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -486,8 +498,8 @@ local function ESRVEX_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(ESRVEX_fake_script)()
-local function FIEARWD_fake_script() -- Fisch.FisCode 
+coroutine.wrap(YJXVSGQ_fake_script)()
+local function HTMP_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -500,8 +512,8 @@ local function FIEARWD_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(FIEARWD_fake_script)()
-local function WPJTNA_fake_script() -- Teleport.TelCode 
+coroutine.wrap(HTMP_fake_script)()
+local function WTZVO_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -514,8 +526,8 @@ local function WPJTNA_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(WPJTNA_fake_script)()
-local function NEDLE_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(WTZVO_fake_script)()
+local function KJOSC_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -528,8 +540,8 @@ local function NEDLE_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(NEDLE_fake_script)()
-local function JQULG_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(KJOSC_fake_script)()
+local function URPMOFW_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -558,8 +570,8 @@ local function JQULG_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(JQULG_fake_script)()
-local function IFNHE_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(URPMOFW_fake_script)()
+local function PRWNMZ_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -690,8 +702,8 @@ local function IFNHE_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(IFNHE_fake_script)()
-local function CWAA_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(PRWNMZ_fake_script)()
+local function STWCX_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -720,8 +732,8 @@ local function CWAA_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(CWAA_fake_script)()
-local function YYKWOU_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(STWCX_fake_script)()
+local function AAMR_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -852,8 +864,8 @@ local function YYKWOU_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(YYKWOU_fake_script)()
-local function DAOGOVJ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(AAMR_fake_script)()
+local function BZEL_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -868,8 +880,8 @@ local function DAOGOVJ_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(DAOGOVJ_fake_script)()
-local function QKASEVM_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(BZEL_fake_script)()
+local function ANKRQXZ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -912,8 +924,8 @@ local function QKASEVM_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(QKASEVM_fake_script)()
-local function FREYTKT_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(ANKRQXZ_fake_script)()
+local function WPSQ_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -965,8 +977,8 @@ local function FREYTKT_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(FREYTKT_fake_script)()
-local function LSIJF_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(WPSQ_fake_script)()
+local function FREVWRV_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -977,4 +989,4 @@ local function LSIJF_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(LSIJF_fake_script)()
+coroutine.wrap(FREVWRV_fake_script)()
