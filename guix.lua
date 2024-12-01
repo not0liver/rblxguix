@@ -173,7 +173,6 @@ FishingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FishingFrame.BorderSizePixel = 0
 FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939361, 0)
 FishingFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
-FishingFrame.Visible = false
 
 Frame_2.Parent = FishingFrame
 Frame_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
@@ -437,6 +436,7 @@ SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SettingsFrame.BorderSizePixel = 0
 SettingsFrame.Position = UDim2.new(0.266666681, 0, 0.142372876, 0)
 SettingsFrame.Size = UDim2.new(0.717241406, 0, 0.830508471, 0)
+SettingsFrame.Visible = false
 
 Title_3.Name = "Title"
 Title_3.Parent = SettingsFrame
@@ -523,7 +523,7 @@ TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.0333333351, 0, 0, 0)
 TextLabel_11.Size = UDim2.new(0.336666673, 0, 1, 0)
 TextLabel_11.Font = Enum.Font.FredokaOne
-TextLabel_11.Text = "Reduce"
+TextLabel_11.Text = "Remove Particles"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 15.000
@@ -563,7 +563,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function PJEATKH_fake_script() -- TextButton.LocalScript 
+local function UMHZ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -575,8 +575,8 @@ local function PJEATKH_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(PJEATKH_fake_script)()
-local function PHUOKLE_fake_script() -- Fisch.FisCode 
+coroutine.wrap(UMHZ_fake_script)()
+local function RIRAD_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -589,8 +589,8 @@ local function PHUOKLE_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(PHUOKLE_fake_script)()
-local function JAEFSTI_fake_script() -- Teleport.TelCode 
+coroutine.wrap(RIRAD_fake_script)()
+local function FMKGLX_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -603,8 +603,8 @@ local function JAEFSTI_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(JAEFSTI_fake_script)()
-local function FOKU_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(FMKGLX_fake_script)()
+local function DGMX_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -617,8 +617,8 @@ local function FOKU_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(FOKU_fake_script)()
-local function AAOQPLC_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(DGMX_fake_script)()
+local function QOHKL_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -647,8 +647,8 @@ local function AAOQPLC_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(AAOQPLC_fake_script)()
-local function JJVBYE_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(QOHKL_fake_script)()
+local function PDZL_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -779,8 +779,8 @@ local function JJVBYE_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(JJVBYE_fake_script)()
-local function TXZROXY_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(PDZL_fake_script)()
+local function ENQKP_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -809,8 +809,8 @@ local function TXZROXY_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(TXZROXY_fake_script)()
-local function RYNPZ_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(ENQKP_fake_script)()
+local function SUXZ_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -941,8 +941,8 @@ local function RYNPZ_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(RYNPZ_fake_script)()
-local function EGGVYOT_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(SUXZ_fake_script)()
+local function QOEWLM_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -957,8 +957,8 @@ local function EGGVYOT_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(EGGVYOT_fake_script)()
-local function JKCW_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(QOEWLM_fake_script)()
+local function YXSUCVZ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -1001,8 +1001,8 @@ local function JKCW_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(JKCW_fake_script)()
-local function YSDV_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(YXSUCVZ_fake_script)()
+local function IVUIHXP_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Get the TextButton instance
@@ -1017,46 +1017,30 @@ local function YSDV_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(YSDV_fake_script)()
-local function JEMFG_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(IVUIHXP_fake_script)()
+local function FJCL_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Make sure you're in Roblox Studio, and the script is attached to a button
 	
 	local button = script.Parent -- Button that triggers the FPS boost
 	
-	-- Function to improve performance when the button is clicked
-	local function improveFPS()
-		-- Disable unnecessary graphical settings
-		game:GetService("Lighting").GlobalShadows = false
-		game:GetService("Lighting").FogEnd = 100000
-		game:GetService("Lighting").Ambient = Color3.fromRGB(255, 255, 255)
-		game:GetService("Lighting").Brightness = 2
-		game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(255, 255, 255)
-	
-		-- Disable terrain rendering if present
-		local terrain = game:GetService("Workspace"):FindFirstChild("Terrain")
-		if terrain then
-			terrain:SetAttribute("TerrainEnabled", false)
-		end
-	
+	-- Function to disable particle emitters when the button is clicked
+	local function disableParticleEmitters()
 		-- Disable particle emitters to save performance
 		for _, v in pairs(game.Workspace:GetDescendants()) do
 			if v:IsA("ParticleEmitter") then
 				v.Enabled = false
 			end
 		end
-	
-		-- Optional: Turn off streaming (helps in some cases)
-		game:GetService("Workspace").StreamingEnabled = false
 	end
 	
 	-- Connect the function to the button click
-	button.MouseButton1Click:Connect(improveFPS)
+	button.MouseButton1Click:Connect(disableParticleEmitters)
 	
 end
-coroutine.wrap(JEMFG_fake_script)()
-local function CFCPGO_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(FJCL_fake_script)()
+local function TMUTTI_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -1108,8 +1092,8 @@ local function CFCPGO_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(CFCPGO_fake_script)()
-local function TXGWSEK_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(TMUTTI_fake_script)()
+local function IZQM_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -1120,4 +1104,4 @@ local function TXGWSEK_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(TXGWSEK_fake_script)()
+coroutine.wrap(IZQM_fake_script)()
