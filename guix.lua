@@ -200,7 +200,18 @@ UICorner_8.Parent = TextButton_5
 
 -- Scripts:
 
-local function KVOESS_fake_script() -- TextButton_5.Twin 
+local function WRWVL_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local frame = script.Parent.Parent.Parent.Parent.Canva
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = false	
+	end)
+end
+coroutine.wrap(WRWVL_fake_script)()
+local function RIROOH_fake_script() -- TextButton_5.Twin 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	-- Reference to the button
@@ -229,8 +240,8 @@ local function KVOESS_fake_script() -- TextButton_5.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(KVOESS_fake_script)()
-local function GHFRZ_fake_script() -- TextButton_5.FishScript 
+coroutine.wrap(RIROOH_fake_script)()
+local function MDGEGC_fake_script() -- TextButton_5.FishScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local Players = game:GetService('Players')
@@ -307,7 +318,7 @@ local function GHFRZ_fake_script() -- TextButton_5.FishScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.1
+				task.wait(0.1)
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
@@ -361,4 +372,4 @@ local function GHFRZ_fake_script() -- TextButton_5.FishScript
 	end
 	
 end
-coroutine.wrap(GHFRZ_fake_script)()
+coroutine.wrap(MDGEGC_fake_script)()
