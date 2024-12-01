@@ -6,36 +6,54 @@ local UICorner_2 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local UIListLayout = Instance.new("UIListLayout")
-local Frame_2 = Instance.new("Frame")
+local Func = Instance.new("Frame")
 local Fisch = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Teleport = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local FishingFrame = Instance.new("Frame")
-local Frame_3 = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local TextButton_3 = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local Frame_4 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local TextButton_4 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local ImageLabel = Instance.new("ImageLabel")
 local TeleportFrame = Instance.new("Frame")
-local Frame_5 = Instance.new("Frame")
+local IslandFrame = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local ChooseIsland = Instance.new("TextButton")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local Roslit = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local RodsFrame = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local Title = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local ShopFrame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local SettingsFrame = Instance.new("Frame")
+local Title_2 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local TextLabel_8 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
 local ImageButton = Instance.new("ImageButton")
 
 --Properties:
@@ -83,15 +101,16 @@ UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
-Frame_2.Parent = Canva
-Frame_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0137931034, 0, 0.143939361, 0)
-Frame_2.Size = UDim2.new(0.239080459, 0, 0.829545438, 0)
+Func.Name = "Func"
+Func.Parent = Canva
+Func.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Func.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Func.BorderSizePixel = 0
+Func.Position = UDim2.new(0.0137931034, 0, 0.143939361, 0)
+Func.Size = UDim2.new(0.239080459, 0, 0.829545438, 0)
 
 Fisch.Name = "Fisch"
-Fisch.Parent = Frame_2
+Fisch.Parent = Func
 Fisch.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Fisch.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Fisch.BorderSizePixel = 0
@@ -106,7 +125,7 @@ UICorner_4.CornerRadius = UDim.new(0, 5)
 UICorner_4.Parent = Fisch
 
 Teleport.Name = "Teleport"
-Teleport.Parent = Frame_2
+Teleport.Parent = Func
 Teleport.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Teleport.BorderSizePixel = 0
@@ -120,19 +139,20 @@ Teleport.TextSize = 15.000
 UICorner_5.CornerRadius = UDim.new(0, 5)
 UICorner_5.Parent = Teleport
 
-TextButton_2.Parent = Frame_2
-TextButton_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0384615399, 0, 0.319634706, 0)
-TextButton_2.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
-TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "Settings"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextSize = 15.000
+Settings.Name = "Settings"
+Settings.Parent = Func
+Settings.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.0384615399, 0, 0.319634706, 0)
+Settings.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
+Settings.Font = Enum.Font.FredokaOne
+Settings.Text = "Optimization"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 15.000
 
 UICorner_6.CornerRadius = UDim.new(0, 5)
-UICorner_6.Parent = TextButton_2
+UICorner_6.Parent = Settings
 
 FishingFrame.Name = "FishingFrame"
 FishingFrame.Parent = Canva
@@ -142,17 +162,17 @@ FishingFrame.BorderSizePixel = 0
 FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939361, 0)
 FishingFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
 
-Frame_3.Parent = FishingFrame
-Frame_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0.0192307699, 0, 0.0273972545, 0)
-Frame_3.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
+Frame_2.Parent = FishingFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0192307699, 0, 0.0273972545, 0)
+Frame_2.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
 
 UICorner_7.CornerRadius = UDim.new(0, 4)
-UICorner_7.Parent = Frame_3
+UICorner_7.Parent = Frame_2
 
-TextLabel.Parent = Frame_3
+TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -167,30 +187,30 @@ TextLabel.TextSize = 15.000
 UIAspectRatioConstraint.Parent = TextLabel
 UIAspectRatioConstraint.AspectRatio = 2.808
 
-TextButton_3.Parent = Frame_3
-TextButton_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.863333344, 0, 0.269230694, 0)
-TextButton_3.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = ""
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.TextSize = 14.000
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.863333344, 0, 0.269230694, 0)
+TextButton_2.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
 
-UICorner_8.Parent = TextButton_3
+UICorner_8.Parent = TextButton_2
 
-Frame_4.Parent = FishingFrame
-Frame_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0.0192307699, 0, 0.170420244, 0)
-Frame_4.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
+Frame_3.Parent = FishingFrame
+Frame_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0192307699, 0, 0.170420244, 0)
+Frame_3.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
 
 UICorner_9.CornerRadius = UDim.new(0, 4)
-UICorner_9.Parent = Frame_4
+UICorner_9.Parent = Frame_3
 
-TextLabel_2.Parent = Frame_4
+TextLabel_2.Parent = Frame_3
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -205,18 +225,18 @@ TextLabel_2.TextSize = 15.000
 UIAspectRatioConstraint_2.Parent = TextLabel_2
 UIAspectRatioConstraint_2.AspectRatio = 2.808
 
-TextButton_4.Parent = Frame_4
-TextButton_4.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 0
-TextButton_4.Position = UDim2.new(0.863333344, 0, 0.269230694, 0)
-TextButton_4.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = ""
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 14.000
+TextButton_3.Parent = Frame_3
+TextButton_3.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.863333344, 0, 0.269230694, 0)
+TextButton_3.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
 
-UICorner_10.Parent = TextButton_4
+UICorner_10.Parent = TextButton_3
 
 TextLabel_3.Parent = Canva
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -228,7 +248,12 @@ TextLabel_3.Size = UDim2.new(0.158620685, 0, 0.0795454532, 0)
 TextLabel_3.Font = Enum.Font.FredokaOne
 TextLabel_3.Text = "Arcane"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 20.000
+TextLabel_3.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel_3
+UITextSizeConstraint.MaxTextSize = 20
 
 ImageLabel.Parent = Canva
 ImageLabel.BackgroundTransparency = 1.000
@@ -242,66 +267,199 @@ TeleportFrame.Parent = Canva
 TeleportFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 TeleportFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TeleportFrame.BorderSizePixel = 0
-TeleportFrame.Position = UDim2.new(0.266666681, 0, 0.143939361, 0)
-TeleportFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
+TeleportFrame.Position = UDim2.new(0.266666681, 0, 0.142372876, 0)
+TeleportFrame.Size = UDim2.new(0.717241406, 0, 0.830508471, 0)
 TeleportFrame.Visible = false
 
-Frame_5.Parent = TeleportFrame
-Frame_5.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_5.BorderSizePixel = 0
-Frame_5.Position = UDim2.new(0.0192307699, 0, 0.0273972545, 0)
-Frame_5.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
+IslandFrame.Name = "IslandFrame"
+IslandFrame.Parent = TeleportFrame
+IslandFrame.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+IslandFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IslandFrame.BorderSizePixel = 0
+IslandFrame.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
+IslandFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_11.CornerRadius = UDim.new(0, 4)
-UICorner_11.Parent = Frame_5
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = IslandFrame
 
-TextLabel_4.Parent = Frame_5
+TextLabel_4.Parent = IslandFrame
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.0399999991, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0.24333334, 0, 0.894915223, 0)
+TextLabel_4.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.150000006, 0, 1, 0)
 TextLabel_4.Font = Enum.Font.FredokaOne
-TextLabel_4.Text = "Island Zone"
+TextLabel_4.Text = "Island"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 15.000
 
-UIAspectRatioConstraint_3.Parent = TextLabel_4
-UIAspectRatioConstraint_3.AspectRatio = 2.808
+TextButton_4.Parent = IslandFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.680000007, 0, 0.206896558, 0)
+TextButton_4.Size = UDim2.new(0.296666652, 0, 0.586206913, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Choose Island"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
 
-ChooseIsland.Name = "ChooseIsland"
-ChooseIsland.Parent = Frame_5
-ChooseIsland.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
-ChooseIsland.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ChooseIsland.BorderSizePixel = 0
-ChooseIsland.Position = UDim2.new(0.686666667, 0, 0.165970728, 0)
-ChooseIsland.Size = UDim2.new(0.273333341, 0, 0.625684381, 0)
-ChooseIsland.Font = Enum.Font.SourceSans
-ChooseIsland.Text = "Choose Island"
-ChooseIsland.TextColor3 = Color3.fromRGB(255, 255, 255)
-ChooseIsland.TextSize = 14.000
+RodsFrame.Name = "RodsFrame"
+RodsFrame.Parent = TeleportFrame
+RodsFrame.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+RodsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RodsFrame.BorderSizePixel = 0
+RodsFrame.Position = UDim2.new(0.0192307699, 0, 0.314285725, 0)
+RodsFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-ScrollingFrame.Parent = ChooseIsland
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0, 0, 0.990206838, 0)
-ScrollingFrame.Size = UDim2.new(0, 82, 0, 124)
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = RodsFrame
 
-Roslit.Name = "Roslit"
-Roslit.Parent = ScrollingFrame
-Roslit.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Roslit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Roslit.BorderSizePixel = 0
-Roslit.Position = UDim2.new(0.0365853645, 0, 0.0483870953, 0)
-Roslit.Size = UDim2.new(0, 76, 0, 28)
-Roslit.Font = Enum.Font.SourceSans
-Roslit.Text = "Roslit"
-Roslit.TextColor3 = Color3.fromRGB(255, 255, 255)
-Roslit.TextSize = 14.000
+TextLabel_5.Parent = RodsFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0.150000006, 0, 1, 0)
+TextLabel_5.Font = Enum.Font.FredokaOne
+TextLabel_5.Text = "Rods"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 15.000
+
+TextButton_5.Parent = RodsFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.680000007, 0, 0.206896558, 0)
+TextButton_5.Size = UDim2.new(0.296666652, 0, 0.586206913, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Choose Rod"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+
+Title.Name = "Title"
+Title.Parent = TeleportFrame
+Title.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
+Title.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = Title
+
+TextLabel_6.Parent = Title
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "Teleport"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 15.000
+
+ShopFrame.Name = "ShopFrame"
+ShopFrame.Parent = TeleportFrame
+ShopFrame.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+ShopFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShopFrame.BorderSizePixel = 0
+ShopFrame.Position = UDim2.new(0.0189999994, 0, 0.458000004, 0)
+ShopFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = ShopFrame
+
+TextLabel_7.Parent = ShopFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0.150000006, 0, 1, 0)
+TextLabel_7.Font = Enum.Font.FredokaOne
+TextLabel_7.Text = "Shop"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 15.000
+
+TextButton_6.Parent = ShopFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.680000007, 0, 0.206896558, 0)
+TextButton_6.Size = UDim2.new(0.296666652, 0, 0.586206913, 0)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Choose Shop"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 14.000
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = Canva
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0.266666681, 0, 0.142372876, 0)
+SettingsFrame.Size = UDim2.new(0.717241406, 0, 0.830508471, 0)
+SettingsFrame.Visible = false
+
+Title_2.Name = "Title"
+Title_2.Parent = SettingsFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
+Title_2.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = Title_2
+
+TextLabel_8.Parent = Title_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "Optimization"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 15.000
+
+Frame_4.Parent = SettingsFrame
+Frame_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
+Frame_4.Size = UDim2.new(0, 300, 0, 29)
+
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = Frame_4
+
+TextLabel_9.Parent = Frame_4
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0333333351, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 101, 0, 29)
+TextLabel_9.Font = Enum.Font.FredokaOne
+TextLabel_9.Text = "Smooth Textures"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 15.000
+
+TextButton_7.Parent = Frame_4
+TextButton_7.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0.856666684, 0, 0.241379306, 0)
+TextButton_7.Size = UDim2.new(0.116999999, 0, 0.462000012, 0)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = ""
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 14.000
+
+UICorner_17.Parent = TextButton_7
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -316,7 +474,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function XSJRKJW_fake_script() -- TextButton.LocalScript 
+local function ESRVEX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -328,32 +486,212 @@ local function XSJRKJW_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(XSJRKJW_fake_script)()
-local function DQLRGGC_fake_script() -- Fisch.LocalScript 
+coroutine.wrap(ESRVEX_fake_script)()
+local function FIEARWD_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
+	local settingsframe = script.Parent.Parent.Parent.SettingsFrame
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		fishframe.Visible = true
 		teleportframe.Visible = false
+		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(DQLRGGC_fake_script)()
-local function WWIU_fake_script() -- Teleport.TelCode 
+coroutine.wrap(FIEARWD_fake_script)()
+local function WPJTNA_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
+	local settingsframe = script.Parent.Parent.Parent.SettingsFrame
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		teleportframe.Visible = true
 		fishframe.Visible = false
+		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(WWIU_fake_script)()
-local function ZUAODP_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(WPJTNA_fake_script)()
+local function NEDLE_fake_script() -- Settings.SettingsCode 
+	local script = Instance.new('LocalScript', Settings)
+
+	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
+	local fishframe = script.Parent.Parent.Parent.FishingFrame
+	local settingsframe = script.Parent.Parent.Parent.SettingsFrame
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		settingsframe.Visible = true
+		teleportframe.Visible = false
+		fishframe.Visible = false
+	end)
+end
+coroutine.wrap(NEDLE_fake_script)()
+local function JQULG_fake_script() -- TextButton_2.Twin 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	-- Reference to the button
+	local button = script.Parent
+	
+	-- Store the default color
+	local defaultColor = button.BackgroundColor3
+	
+	-- Variable to track state
+	local isGreen = false
+	
+	-- Function to handle button click
+	local function onButtonClick()
+		if isGreen then
+			-- Change back to the default color
+			button.BackgroundColor3 = defaultColor
+		else
+			-- Change to green
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		-- Toggle the state
+		isGreen = not isGreen
+	end
+	
+	-- Connect the function to the button's MouseButton1Click event
+	button.MouseButton1Click:Connect(onButtonClick)
+	
+end
+coroutine.wrap(JQULG_fake_script)()
+local function IFNHE_fake_script() -- TextButton_2.FishScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local Players = game:GetService('Players')
+	local CoreGui = game:GetService('StarterGui')
+	local GuiService = game:GetService('GuiService')
+	local ReplicatedStorage = game:GetService('ReplicatedStorage')
+	local ContextActionService = game:GetService('ContextActionService')
+	local VirtualInputManager = game:GetService('VirtualInputManager')
+	local UserInputService = game:GetService('UserInputService')
+	
+	local LocalPlayer = Players.LocalPlayer
+	
+	local Enabled = false
+	local Rod = nil
+	local Progress = false
+	local Finished = false
+	local LoopPosition = nil
+	
+	-- Show notification function
+	local function ShowNotification(String)
+		CoreGui:SetCore('SendNotification', {
+			Title = 'Auto Farm',
+			Text = String,
+			Duration = 1
+		})
+	end
+	
+	-- Function to toggle the farm state
+	local function ToggleFarm()
+		-- Toggle the Enabled state
+		Enabled = not Enabled
+	
+		-- Handle enabling and disabling the farm
+		if Enabled then
+			-- If enabled, remember the player's position to loop back to later
+			LoopPosition = LocalPlayer.Character.HumanoidRootPart.Position
+			ShowNotification("Farm Enabled")
+		else
+			-- Reset farm state when disabled
+			Finished = false
+			Progress = false
+			GuiService.SelectedObject = nil
+			if Rod then
+				Rod.events.reset:FireServer()
+			end
+			ShowNotification("Farm Disabled")
+		end
+	end
+	
+	-- Button click event that triggers the farm toggle
+	script.Parent.MouseButton1Click:Connect(function()
+		ToggleFarm()  -- Call the ToggleFarm function when the button is clicked
+	end)
+	
+	-- Listen for when the rod is added to the player's character
+	LocalPlayer.Character.ChildAdded:Connect(function(Child)
+		if Child:IsA('Tool') and Child.Name:lower():find('rod') then
+			Rod = Child
+		end
+	end)
+	
+	-- Listen for when the rod is removed from the player's character
+	LocalPlayer.Character.ChildRemoved:Connect(function(Child)
+		if Child == Rod then
+			Enabled = false
+			Finished = false
+			Progress = false
+			Rod = nil
+			GuiService.SelectedObject = nil
+		end
+	end)
+	
+	-- Listen for when UI elements are added to the PlayerGui
+	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
+		if Enabled then
+			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
+				task.wait(0.3)
+				GuiService.SelectedObject = Descendant
+				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+				task.wait(0.1)
+				GuiService.SelectedObject = nil
+			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
+				Finished = true
+				Descendant:GetPropertyChangedSignal('Position'):Wait()
+				ReplicatedStorage.events.reelfinished:FireServer(100, true)
+			end
+		end
+	end)
+	
+	-- Listen for when UI elements are removed from PlayerGui
+	LocalPlayer.PlayerGui.DescendantRemoving:Connect(function(Descendant)
+		if Descendant.Name == 'reel' then
+			Finished = false
+			Progress = false
+		end
+	end)
+	
+	-- Spawn task to handle the farm loop (casting)
+	task.spawn(function()
+		while true do
+			if Enabled and not Progress then
+				if Rod then
+					Progress = true
+					task.wait(1)
+					Rod.events.reset:FireServer()
+					Rod.events.cast:FireServer(100.5)
+				end
+			end
+			task.wait()
+		end
+	end)
+	
+	-- Spawn task to handle player position (looping back to saved position)
+	task.spawn(function()
+		while true do
+			if Enabled then
+				LocalPlayer.Character.HumanoidRootPart.Position = LoopPosition
+			end
+			task.wait(0.50)
+		end
+	end)
+	
+	-- Check if the rod is already in the character when the script starts
+	local NewRod = LocalPlayer.Character:FindFirstChildWhichIsA('Tool')
+	if NewRod and NewRod.Name:lower():find('rod') then
+		Rod = NewRod
+	end
+	
+end
+coroutine.wrap(IFNHE_fake_script)()
+local function CWAA_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -382,8 +720,8 @@ local function ZUAODP_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(ZUAODP_fake_script)()
-local function LEUYP_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(CWAA_fake_script)()
+local function YYKWOU_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -514,205 +852,68 @@ local function LEUYP_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(LEUYP_fake_script)()
-local function QGIQY_fake_script() -- TextButton_4.Twin 
-	local script = Instance.new('LocalScript', TextButton_4)
+coroutine.wrap(YYKWOU_fake_script)()
+local function DAOGOVJ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
-	-- Reference to the button
+	-- Get the TextButton instance
 	local button = script.Parent
 	
-	-- Store the default color
-	local defaultColor = button.BackgroundColor3
-	
-	-- Variable to track state
-	local isGreen = false
-	
-	-- Function to handle button click
-	local function onButtonClick()
-		if isGreen then
-			-- Change back to the default color
-			button.BackgroundColor3 = defaultColor
-		else
-			-- Change to green
-			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-		end
-		-- Toggle the state
-		isGreen = not isGreen
+	-- Function to change the button's color to green when clicked
+	local function onClick()
+		button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Green color
 	end
 	
-	-- Connect the function to the button's MouseButton1Click event
-	button.MouseButton1Click:Connect(onButtonClick)
+	-- Connect the button's MouseButton1Click event to the onClick function
+	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(QGIQY_fake_script)()
-local function LBDNEP_fake_script() -- TextButton_4.FishScript 
-	local script = Instance.new('LocalScript', TextButton_4)
+coroutine.wrap(DAOGOVJ_fake_script)()
+local function QKASEVM_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
-	local Players = game:GetService('Players')
-	local CoreGui = game:GetService('StarterGui')
-	local GuiService = game:GetService('GuiService')
-	local ReplicatedStorage = game:GetService('ReplicatedStorage')
-	local ContextActionService = game:GetService('ContextActionService')
-	local VirtualInputManager = game:GetService('VirtualInputManager')
-	local UserInputService = game:GetService('UserInputService')
+	-- UI Button Script
+	local button = script.Parent -- Assume the script is inside the TextButton
+	local players = game:GetService("Players")
 	
-	local LocalPlayer = Players.LocalPlayer
-	
-	local Enabled = false
-	local Rod = nil
-	local Progress = false
-	local Finished = false
-	local LoopPosition = nil
-	
-	-- Show notification function
-	local function ShowNotification(String)
-		CoreGui:SetCore('SendNotification', {
-			Title = 'Auto Farm',
-			Text = String,
-			Duration = 1
-		})
-	end
-	
-	-- Function to toggle the farm state
-	local function ToggleFarm()
-		-- Toggle the Enabled state
-		Enabled = not Enabled
-	
-		-- Handle enabling and disabling the farm
-		if Enabled then
-			-- If enabled, remember the player's position to loop back to later
-			LoopPosition = LocalPlayer.Character.HumanoidRootPart.Position
-			ShowNotification("Farm Enabled")
-		else
-			-- Reset farm state when disabled
-			Finished = false
-			Progress = false
-			GuiService.SelectedObject = nil
-			if Rod then
-				Rod.events.reset:FireServer()
-			end
-			ShowNotification("Farm Disabled")
-		end
-	end
-	
-	-- Button click event that triggers the farm toggle
-	script.Parent.MouseButton1Click:Connect(function()
-		ToggleFarm()  -- Call the ToggleFarm function when the button is clicked
-	end)
-	
-	-- Listen for when the rod is added to the player's character
-	LocalPlayer.Character.ChildAdded:Connect(function(Child)
-		if Child:IsA('Tool') and Child.Name:lower():find('rod') then
-			Rod = Child
-		end
-	end)
-	
-	-- Listen for when the rod is removed from the player's character
-	LocalPlayer.Character.ChildRemoved:Connect(function(Child)
-		if Child == Rod then
-			Enabled = false
-			Finished = false
-			Progress = false
-			Rod = nil
-			GuiService.SelectedObject = nil
-		end
-	end)
-	
-	-- Listen for when UI elements are added to the PlayerGui
-	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
-		if Enabled then
-			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.3)
-				GuiService.SelectedObject = Descendant
-				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
-				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-				task.wait(0.1)
-				GuiService.SelectedObject = nil
-			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
-				Finished = true
-				Descendant:GetPropertyChangedSignal('Position'):Wait()
-				ReplicatedStorage.events.reelfinished:FireServer(100, true)
-			end
-		end
-	end)
-	
-	-- Listen for when UI elements are removed from PlayerGui
-	LocalPlayer.PlayerGui.DescendantRemoving:Connect(function(Descendant)
-		if Descendant.Name == 'reel' then
-			Finished = false
-			Progress = false
-		end
-	end)
-	
-	-- Spawn task to handle the farm loop (casting)
-	task.spawn(function()
-		while true do
-			if Enabled and not Progress then
-				if Rod then
-					Progress = true
-					task.wait(1)
-					Rod.events.reset:FireServer()
-					Rod.events.cast:FireServer(100.5)
-				end
-			end
-			task.wait()
-		end
-	end)
-	
-	-- Spawn task to handle player position (looping back to saved position)
-	task.spawn(function()
-		while true do
-			if Enabled then
-				LocalPlayer.Character.HumanoidRootPart.Position = LoopPosition
-			end
-			task.wait(0.50)
-		end
-	end)
-	
-	-- Check if the rod is already in the character when the script starts
-	local NewRod = LocalPlayer.Character:FindFirstChildWhichIsA('Tool')
-	if NewRod and NewRod.Name:lower():find('rod') then
-		Rod = NewRod
-	end
-	
-end
-coroutine.wrap(LBDNEP_fake_script)()
-local function ZYTDJY_fake_script() -- Roslit.RoslitCo 
-	local script = Instance.new('LocalScript', Roslit)
-
-	-- Predefined GPS location (XYZ)
-	local targetPosition = Vector3.new(-1523.7, 140.3, 678.5) -- Your desired coordinates
-	
-	-- Get the button and player
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	
-	-- Button click event
 	button.MouseButton1Click:Connect(function()
-		-- Ensure the player's character exists
-		local character = player.Character or player.CharacterAdded:Wait()
-		local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+		-- Loop through all parts in the game
+		for _, obj in pairs(workspace:GetDescendants()) do
+			-- Check if the object is a part
+			if obj:IsA("Part") then
+				-- Check if the part's ancestor is part of a player's character model
+				local isPlayerPart = false
+				for _, player in pairs(players:GetPlayers()) do
+					if obj:IsDescendantOf(player.Character) then
+						isPlayerPart = true
+						break
+					end
+				end
 	
-		if humanoidRootPart then
-			-- Teleport the player to the target position
-			humanoidRootPart.CFrame = CFrame.new(targetPosition)
-		else
-			warn("HumanoidRootPart not found!")
+				-- If it's not a player's part, remove textures, decals, and meshes
+				if not isPlayerPart then
+					-- Remove any decals or textures on the part
+					for _, decal in pairs(obj:GetChildren()) do
+						if decal:IsA("Decal") or decal:IsA("Texture") then
+							decal:Destroy()
+						end
+					end
+	
+					-- Remove any meshes attached to the part
+					if obj:FindFirstChild("Mesh") then
+						obj.Mesh:Destroy()
+					end
+	
+					-- Set the part's material to SmoothPlastic for smooth appearance
+					obj.Material = Enum.Material.SmoothPlastic
+				end
+			end
 		end
 	end)
-end
-coroutine.wrap(ZYTDJY_fake_script)()
-local function WGXPBT_fake_script() -- ChooseIsland.LocalScript 
-	local script = Instance.new('LocalScript', ChooseIsland)
-
-	local islandframe = script.Parent.ScrollingFrame
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		islandframe.Visible = not islandframe.Visible
-	end)
 end
-coroutine.wrap(WGXPBT_fake_script)()
-local function SVABF_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(QKASEVM_fake_script)()
+local function FREYTKT_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -764,8 +965,8 @@ local function SVABF_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(SVABF_fake_script)()
-local function XTSBIYO_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(FREYTKT_fake_script)()
+local function LSIJF_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -776,4 +977,4 @@ local function XTSBIYO_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(XTSBIYO_fake_script)()
+coroutine.wrap(LSIJF_fake_script)()
