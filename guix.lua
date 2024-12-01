@@ -26,36 +26,46 @@ local TextLabel_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local Title = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local ImageLabel = Instance.new("ImageLabel")
 local TeleportFrame = Instance.new("Frame")
 local IslandFrame = Instance.new("Frame")
-local UICorner_11 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextButton_4 = Instance.new("TextButton")
-local RodsFrame = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
-local TextButton_5 = Instance.new("TextButton")
-local Title = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
+local RodsFrame = Instance.new("Frame")
 local UICorner_13 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
-local ShopFrame = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local Title_2 = Instance.new("Frame")
 local UICorner_14 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
-local TextButton_6 = Instance.new("TextButton")
-local SettingsFrame = Instance.new("Frame")
-local Title_2 = Instance.new("Frame")
+local ShopFrame = Instance.new("Frame")
 local UICorner_15 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
-local Frame_4 = Instance.new("Frame")
+local TextButton_6 = Instance.new("TextButton")
+local SettingsFrame = Instance.new("Frame")
+local Title_3 = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
 local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local TextButton_7 = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Frame_5 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
 local ImageButton = Instance.new("ImageButton")
 
 --Properties:
@@ -163,12 +173,13 @@ FishingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FishingFrame.BorderSizePixel = 0
 FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939361, 0)
 FishingFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
+FishingFrame.Visible = false
 
 Frame_2.Parent = FishingFrame
 Frame_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0192307699, 0, 0.0273972545, 0)
+Frame_2.Position = UDim2.new(0.0192307699, 0, 0.170420244, 0)
 Frame_2.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
 
 UICorner_7.CornerRadius = UDim.new(0, 4)
@@ -206,7 +217,7 @@ Frame_3.Parent = FishingFrame
 Frame_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0.0192307699, 0, 0.170420244, 0)
+Frame_3.Position = UDim2.new(0.0192307699, 0, 0.313443214, 0)
 Frame_3.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
 
 UICorner_9.CornerRadius = UDim.new(0, 4)
@@ -240,21 +251,43 @@ TextButton_3.TextSize = 14.000
 
 UICorner_10.Parent = TextButton_3
 
-TextLabel_3.Parent = Canva
+Title.Name = "Title"
+Title.Parent = FishingFrame
+Title.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
+Title.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_11.CornerRadius = UDim.new(0, 5)
+UICorner_11.Parent = Title
+
+TextLabel_3.Parent = Title
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0229885057, 0, 0.0303030238, 0)
-TextLabel_3.Size = UDim2.new(0.158620685, 0, 0.0795454532, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_3.Font = Enum.Font.FredokaOne
-TextLabel_3.Text = "Arcane"
+TextLabel_3.Text = "Fishing"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 20.000
-TextLabel_3.TextWrapped = true
+TextLabel_3.TextSize = 15.000
 
-UITextSizeConstraint.Parent = TextLabel_3
+TextLabel_4.Parent = Canva
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0229885057, 0, 0.0303030238, 0)
+TextLabel_4.Size = UDim2.new(0.158620685, 0, 0.0795454532, 0)
+TextLabel_4.Font = Enum.Font.FredokaOne
+TextLabel_4.Text = "Arcane"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 20.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel_4
 UITextSizeConstraint.MaxTextSize = 20
 
 ImageLabel.Parent = Canva
@@ -281,20 +314,20 @@ IslandFrame.BorderSizePixel = 0
 IslandFrame.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
 IslandFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_11.CornerRadius = UDim.new(0, 5)
-UICorner_11.Parent = IslandFrame
+UICorner_12.CornerRadius = UDim.new(0, 5)
+UICorner_12.Parent = IslandFrame
 
-TextLabel_4.Parent = IslandFrame
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.0233333334, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0.150000006, 0, 1, 0)
-TextLabel_4.Font = Enum.Font.FredokaOne
-TextLabel_4.Text = "Island"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 15.000
+TextLabel_5.Parent = IslandFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0.150000006, 0, 1, 0)
+TextLabel_5.Font = Enum.Font.FredokaOne
+TextLabel_5.Text = "Island"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 15.000
 
 TextButton_4.Parent = IslandFrame
 TextButton_4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -315,20 +348,20 @@ RodsFrame.BorderSizePixel = 0
 RodsFrame.Position = UDim2.new(0.0192307699, 0, 0.314285725, 0)
 RodsFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_12.CornerRadius = UDim.new(0, 5)
-UICorner_12.Parent = RodsFrame
+UICorner_13.CornerRadius = UDim.new(0, 5)
+UICorner_13.Parent = RodsFrame
 
-TextLabel_5.Parent = RodsFrame
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(0.0233333334, 0, 0, 0)
-TextLabel_5.Size = UDim2.new(0.150000006, 0, 1, 0)
-TextLabel_5.Font = Enum.Font.FredokaOne
-TextLabel_5.Text = "Rods"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 15.000
+TextLabel_6.Parent = RodsFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0.150000006, 0, 1, 0)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "Rods"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 15.000
 
 TextButton_5.Parent = RodsFrame
 TextButton_5.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -341,27 +374,27 @@ TextButton_5.Text = "Choose Rod"
 TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_5.TextSize = 14.000
 
-Title.Name = "Title"
-Title.Parent = TeleportFrame
-Title.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
-Title.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+Title_2.Name = "Title"
+Title_2.Parent = TeleportFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
+Title_2.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_13.CornerRadius = UDim.new(0, 5)
-UICorner_13.Parent = Title
+UICorner_14.CornerRadius = UDim.new(0, 5)
+UICorner_14.Parent = Title_2
 
-TextLabel_6.Parent = Title
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_6.Font = Enum.Font.FredokaOne
-TextLabel_6.Text = "Teleport"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextSize = 15.000
+TextLabel_7.Parent = Title_2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_7.Font = Enum.Font.FredokaOne
+TextLabel_7.Text = "Teleport"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 15.000
 
 ShopFrame.Name = "ShopFrame"
 ShopFrame.Parent = TeleportFrame
@@ -371,20 +404,20 @@ ShopFrame.BorderSizePixel = 0
 ShopFrame.Position = UDim2.new(0.0189999994, 0, 0.458000004, 0)
 ShopFrame.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_14.CornerRadius = UDim.new(0, 5)
-UICorner_14.Parent = ShopFrame
+UICorner_15.CornerRadius = UDim.new(0, 5)
+UICorner_15.Parent = ShopFrame
 
-TextLabel_7.Parent = ShopFrame
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(0.0233333334, 0, 0, 0)
-TextLabel_7.Size = UDim2.new(0.150000006, 0, 1, 0)
-TextLabel_7.Font = Enum.Font.FredokaOne
-TextLabel_7.Text = "Shop"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 15.000
+TextLabel_8.Parent = ShopFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.0233333334, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0.150000006, 0, 1, 0)
+TextLabel_8.Font = Enum.Font.FredokaOne
+TextLabel_8.Text = "Shop"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 15.000
 
 TextButton_6.Parent = ShopFrame
 TextButton_6.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
@@ -404,29 +437,28 @@ SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SettingsFrame.BorderSizePixel = 0
 SettingsFrame.Position = UDim2.new(0.266666681, 0, 0.142372876, 0)
 SettingsFrame.Size = UDim2.new(0.717241406, 0, 0.830508471, 0)
-SettingsFrame.Visible = false
 
-Title_2.Name = "Title"
-Title_2.Parent = SettingsFrame
-Title_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title_2.BorderSizePixel = 0
-Title_2.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
-Title_2.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+Title_3.Name = "Title"
+Title_3.Parent = SettingsFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.0192307699, 0, 0.0285714287, 0)
+Title_3.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_15.CornerRadius = UDim.new(0, 5)
-UICorner_15.Parent = Title_2
+UICorner_16.CornerRadius = UDim.new(0, 5)
+UICorner_16.Parent = Title_3
 
-TextLabel_8.Parent = Title_2
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Size = UDim2.new(1, 0, 1, 0)
-TextLabel_8.Font = Enum.Font.FredokaOne
-TextLabel_8.Text = "Optimization"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 15.000
+TextLabel_9.Parent = Title_3
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_9.Font = Enum.Font.FredokaOne
+TextLabel_9.Text = "Optimization"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 15.000
 
 Frame_4.Parent = SettingsFrame
 Frame_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
@@ -435,24 +467,24 @@ Frame_4.BorderSizePixel = 0
 Frame_4.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
 Frame_4.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
-UICorner_16.CornerRadius = UDim.new(0, 5)
-UICorner_16.Parent = Frame_4
+UICorner_17.CornerRadius = UDim.new(0, 5)
+UICorner_17.Parent = Frame_4
 
-TextLabel_9.Parent = Frame_4
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(0.0333333351, 0, 0, 0)
-TextLabel_9.Size = UDim2.new(0.336666673, 0, 1, 0)
-TextLabel_9.Font = Enum.Font.FredokaOne
-TextLabel_9.Text = "Smooth Textures"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 15.000
-TextLabel_9.TextWrapped = true
+TextLabel_10.Parent = Frame_4
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.0333333351, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0.336666673, 0, 1, 0)
+TextLabel_10.Font = Enum.Font.FredokaOne
+TextLabel_10.Text = "Smooth Textures"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 15.000
+TextLabel_10.TextWrapped = true
 
-UITextSizeConstraint_2.Parent = TextLabel_9
+UITextSizeConstraint_2.Parent = TextLabel_10
 UITextSizeConstraint_2.MaxTextSize = 15
 
 TextButton_7.Parent = Frame_4
@@ -468,10 +500,55 @@ TextButton_7.TextScaled = true
 TextButton_7.TextSize = 14.000
 TextButton_7.TextWrapped = true
 
-UICorner_17.Parent = TextButton_7
+UICorner_18.Parent = TextButton_7
 
 UITextSizeConstraint_3.Parent = TextButton_7
 UITextSizeConstraint_3.MaxTextSize = 14
+
+Frame_5.Parent = SettingsFrame
+Frame_5.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.0189999994, 0, 0.314999998, 0)
+Frame_5.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_19.CornerRadius = UDim.new(0, 5)
+UICorner_19.Parent = Frame_5
+
+TextLabel_11.Parent = Frame_5
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.0333333351, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0.336666673, 0, 1, 0)
+TextLabel_11.Font = Enum.Font.FredokaOne
+TextLabel_11.Text = "Reduce"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 15.000
+TextLabel_11.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = TextLabel_11
+UITextSizeConstraint_4.MaxTextSize = 15
+
+TextButton_8.Parent = Frame_5
+TextButton_8.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.856666684, 0, 0.241379306, 0)
+TextButton_8.Size = UDim2.new(0.116999991, 0, 0.462000012, 0)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = ""
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+
+UICorner_20.Parent = TextButton_8
+
+UITextSizeConstraint_5.Parent = TextButton_8
+UITextSizeConstraint_5.MaxTextSize = 14
 
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -486,7 +563,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function YJXVSGQ_fake_script() -- TextButton.LocalScript 
+local function PJEATKH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -498,8 +575,8 @@ local function YJXVSGQ_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(YJXVSGQ_fake_script)()
-local function HTMP_fake_script() -- Fisch.FisCode 
+coroutine.wrap(PJEATKH_fake_script)()
+local function PHUOKLE_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -512,8 +589,8 @@ local function HTMP_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(HTMP_fake_script)()
-local function WTZVO_fake_script() -- Teleport.TelCode 
+coroutine.wrap(PHUOKLE_fake_script)()
+local function JAEFSTI_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -526,8 +603,8 @@ local function WTZVO_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(WTZVO_fake_script)()
-local function KJOSC_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(JAEFSTI_fake_script)()
+local function FOKU_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -540,8 +617,8 @@ local function KJOSC_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(KJOSC_fake_script)()
-local function URPMOFW_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(FOKU_fake_script)()
+local function AAOQPLC_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -570,8 +647,8 @@ local function URPMOFW_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(URPMOFW_fake_script)()
-local function PRWNMZ_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(AAOQPLC_fake_script)()
+local function JJVBYE_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -702,8 +779,8 @@ local function PRWNMZ_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(PRWNMZ_fake_script)()
-local function STWCX_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(JJVBYE_fake_script)()
+local function TXZROXY_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -732,8 +809,8 @@ local function STWCX_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(STWCX_fake_script)()
-local function AAMR_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(TXZROXY_fake_script)()
+local function RYNPZ_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -864,8 +941,8 @@ local function AAMR_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(AAMR_fake_script)()
-local function BZEL_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(RYNPZ_fake_script)()
+local function EGGVYOT_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -880,8 +957,8 @@ local function BZEL_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(BZEL_fake_script)()
-local function ANKRQXZ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(EGGVYOT_fake_script)()
+local function JKCW_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -924,8 +1001,62 @@ local function ANKRQXZ_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(ANKRQXZ_fake_script)()
-local function WPSQ_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(JKCW_fake_script)()
+local function YSDV_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	-- Get the TextButton instance
+	local button = script.Parent
+	
+	-- Function to change the button's color to green when clicked
+	local function onClick()
+		button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Green color
+	end
+	
+	-- Connect the button's MouseButton1Click event to the onClick function
+	button.MouseButton1Click:Connect(onClick)
+	
+end
+coroutine.wrap(YSDV_fake_script)()
+local function JEMFG_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	-- Make sure you're in Roblox Studio, and the script is attached to a button
+	
+	local button = script.Parent -- Button that triggers the FPS boost
+	
+	-- Function to improve performance when the button is clicked
+	local function improveFPS()
+		-- Disable unnecessary graphical settings
+		game:GetService("Lighting").GlobalShadows = false
+		game:GetService("Lighting").FogEnd = 100000
+		game:GetService("Lighting").Ambient = Color3.fromRGB(255, 255, 255)
+		game:GetService("Lighting").Brightness = 2
+		game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(255, 255, 255)
+	
+		-- Disable terrain rendering if present
+		local terrain = game:GetService("Workspace"):FindFirstChild("Terrain")
+		if terrain then
+			terrain:SetAttribute("TerrainEnabled", false)
+		end
+	
+		-- Disable particle emitters to save performance
+		for _, v in pairs(game.Workspace:GetDescendants()) do
+			if v:IsA("ParticleEmitter") then
+				v.Enabled = false
+			end
+		end
+	
+		-- Optional: Turn off streaming (helps in some cases)
+		game:GetService("Workspace").StreamingEnabled = false
+	end
+	
+	-- Connect the function to the button click
+	button.MouseButton1Click:Connect(improveFPS)
+	
+end
+coroutine.wrap(JEMFG_fake_script)()
+local function CFCPGO_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -977,8 +1108,8 @@ local function WPSQ_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(WPSQ_fake_script)()
-local function FREVWRV_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(CFCPGO_fake_script)()
+local function TXGWSEK_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -989,4 +1120,4 @@ local function FREVWRV_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(FREVWRV_fake_script)()
+coroutine.wrap(TXGWSEK_fake_script)()
