@@ -1,194 +1,237 @@
-local MainGui = Instance.new("ScreenGui")
-local BigBox = Instance.new("Frame")
+local ScreenGui = Instance.new("ScreenGui")
+local Canva = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local CloseButton = Instance.new("TextButton")
-local FrameButton = Instance.new("Frame")
-local _1 = Instance.new("TextButton")
-local _2 = Instance.new("TextButton")
-local _3 = Instance.new("TextButton")
-local _4 = Instance.new("TextButton")
-local Fishing = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
-local Teleport = Instance.new("Frame")
-local Miscellaneous = Instance.new("Frame")
-local Settings = Instance.new("Frame")
-local SmallButton = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local FishingFrame = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
-MainGui.Name = "MainGui"
-MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MainGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-BigBox.Name = "BigBox"
-BigBox.Parent = MainGui
-BigBox.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-BigBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BigBox.BorderSizePixel = 0
-BigBox.Position = UDim2.new(0.230421692, 0, 0.111532614, 0)
-BigBox.Size = UDim2.new(0.538403571, 0, 0.775417328, 0)
+Canva.Name = "Canva"
+Canva.Parent = ScreenGui
+Canva.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Canva.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Canva.BorderSizePixel = 0
+Canva.Position = UDim2.new(0.254141569, 0, 0.182108626, 0)
+Canva.Size = UDim2.new(0.491340369, 0, 0.63258785, 0)
 
-Frame.Parent = BigBox
-Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = Canva
+
+Frame.Parent = Canva
+Frame.BackgroundColor3 = Color3.fromRGB(222, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Size = UDim2.new(0.998601496, 0, 0.101975381, 0)
-Frame.ZIndex = 2
+Frame.Position = UDim2.new(0.926436782, 0, 0.0303030312, 0)
+Frame.Size = UDim2.new(0.0574712642, 0, 0.0795454532, 0)
 
-TextLabel.Parent = Frame
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(-0.0339990221, 0, -0.0176191777, 0)
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 20.000
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = TextButton
+
+UIListLayout.Parent = Frame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+TextLabel.Parent = Canva
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0063025211, 0, 0, 0)
-TextLabel.Size = UDim2.new(0.239495799, 0, 1, 0)
+TextLabel.Position = UDim2.new(0.0137931034, 0, 0.0303030312, 0)
+TextLabel.Size = UDim2.new(0.158620685, 0, 0.0795454532, 0)
 TextLabel.Font = Enum.Font.FredokaOne
-TextLabel.Text = "LumineSCRPT"
+TextLabel.Text = "Arcane"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 18.000
+TextLabel.TextSize = 20.000
 
-CloseButton.Name = "CloseButton"
-CloseButton.Parent = Frame
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CloseButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CloseButton.BorderSizePixel = 0
-CloseButton.Position = UDim2.new(0.934685469, 0, -0.00308805518, 0)
-CloseButton.Size = UDim2.new(0.0653145239, 0, 0.369812489, 0)
-CloseButton.ZIndex = 3
-CloseButton.Font = Enum.Font.SourceSans
-CloseButton.Text = ""
-CloseButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseButton.TextSize = 14.000
+ImageLabel.Parent = Canva
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.172413796, 0, 0.0303030312, 0)
+ImageLabel.Size = UDim2.new(0.0666666701, 0, 0.0795454532, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6022668949"
 
-FrameButton.Name = "FrameButton"
-FrameButton.Parent = BigBox
-FrameButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FrameButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-FrameButton.BorderSizePixel = 0
-FrameButton.Position = UDim2.new(0.0125874141, 0, 0.126696646, 0)
-FrameButton.Size = UDim2.new(0.226573452, 0, 0.849794865, 0)
+Frame_2.Parent = Canva
+Frame_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0137931034, 0, 0.143939391, 0)
+Frame_2.Size = UDim2.new(0.239080459, 0, 0.829545438, 0)
 
-_1.Name = "1"
-_1.Parent = FrameButton
-_1.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_1.BorderSizePixel = 0
-_1.Position = UDim2.new(0.0370370373, 0, 0.0304545462, 0)
-_1.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
-_1.Font = Enum.Font.SourceSans
-_1.Text = "Fishing"
-_1.TextColor3 = Color3.fromRGB(0, 0, 0)
-_1.TextSize = 14.000
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0384615399, 0, 0.0273972601, 0)
+TextButton_2.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = "   Fishing"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 15.000
 
-_2.Name = "2"
-_2.Parent = FrameButton
-_2.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_2.BorderSizePixel = 0
-_2.Position = UDim2.new(0.0370370373, 0, 0.280454546, 0)
-_2.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
-_2.Font = Enum.Font.SourceSans
-_2.Text = "Location"
-_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-_2.TextSize = 14.000
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = TextButton_2
 
-_3.Name = "3"
-_3.Parent = FrameButton
-_3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_3.BorderSizePixel = 0
-_3.Position = UDim2.new(0.0370370373, 0, 0.530454516, 0)
-_3.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
-_3.Font = Enum.Font.SourceSans
-_3.Text = "Miscellaneous"
-_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-_3.TextSize = 14.000
+ImageLabel_2.Parent = TextButton_2
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Size = UDim2.new(0.3125, 0, 1, 0)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6031094681"
 
-_4.Name = "4"
-_4.Parent = FrameButton
-_4.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-_4.BorderSizePixel = 0
-_4.Position = UDim2.new(0.0370370373, 0, 0.780454516, 0)
-_4.Size = UDim2.new(0.92592591, 0, 0.181818187, 0)
-_4.Font = Enum.Font.SourceSans
-_4.Text = "Settings"
-_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-_4.TextSize = 14.000
+TextButton_3.Parent = Frame_2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0384615399, 0, 0.173515975, 0)
+TextButton_3.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
+TextButton_3.Font = Enum.Font.FredokaOne
+TextButton_3.Text = "    Teleport"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 15.000
 
-Fishing.Name = "Fishing"
-Fishing.Parent = BigBox
-Fishing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Fishing.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Fishing.BorderSizePixel = 0
-Fishing.Position = UDim2.new(0.251748264, 0, 0.123606481, 0)
-Fishing.Size = UDim2.new(0.734265804, 0, 0.852885008, 0)
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = TextButton_3
 
-TextButton.Parent = Fishing
-TextButton.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.214285716, 0, 0.347826093, 0)
-TextButton.Size = UDim2.new(0.571428597, 0, 0.181159422, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Enable Fishing"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
+ImageLabel_3.Parent = TextButton_3
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Size = UDim2.new(0.3125, 0, 1, 0)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=6031094681"
 
-Teleport.Name = "Teleport"
-Teleport.Parent = BigBox
-Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Teleport.BorderSizePixel = 0
-Teleport.Position = UDim2.new(0.251748264, 0, 0.123606481, 0)
-Teleport.Size = UDim2.new(0.734265804, 0, 0.852885008, 0)
-Teleport.Visible = false
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.0384615399, 0, 0.319634706, 0)
+TextButton_4.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
+TextButton_4.Font = Enum.Font.FredokaOne
+TextButton_4.Text = "   Settings"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 15.000
 
-Miscellaneous.Name = "Miscellaneous"
-Miscellaneous.Parent = BigBox
-Miscellaneous.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Miscellaneous.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Miscellaneous.BorderSizePixel = 0
-Miscellaneous.Position = UDim2.new(0.251748264, 0, 0.123606481, 0)
-Miscellaneous.Size = UDim2.new(0.734265804, 0, 0.852885008, 0)
-Miscellaneous.Visible = false
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = TextButton_4
 
-Settings.Name = "Settings"
-Settings.Parent = BigBox
-Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Settings.BorderSizePixel = 0
-Settings.Position = UDim2.new(0.251748264, 0, 0.123606481, 0)
-Settings.Size = UDim2.new(0.734265804, 0, 0.852885008, 0)
-Settings.Visible = false
+ImageLabel_4.Parent = TextButton_4
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Size = UDim2.new(0.3125, 0, 1, 0)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=6031094681"
 
-SmallButton.Name = "SmallButton"
-SmallButton.Parent = MainGui
-SmallButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SmallButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SmallButton.BorderSizePixel = 0
-SmallButton.Position = UDim2.new(0.0960090384, 0, 0.348254919, 0)
-SmallButton.Size = UDim2.new(0.0587349422, 0, 0.122913502, 0)
-SmallButton.Visible = false
-SmallButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+FishingFrame.Name = "FishingFrame"
+FishingFrame.Parent = Canva
+FishingFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+FishingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FishingFrame.BorderSizePixel = 0
+FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939391, 0)
+FishingFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
+
+Frame_3.Parent = FishingFrame
+Frame_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0192307699, 0, 0.0273972601, 0)
+Frame_3.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Frame_3
+
+TextLabel_2.Parent = Frame_3
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0.24333334, 0, 1, 0)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Auto Farm"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 15.000
+
+TextButton_5.Parent = Frame_3
+TextButton_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.863333344, 0, 0.269230783, 0)
+TextButton_5.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = ""
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_8.Parent = TextButton_5
 
 -- Scripts:
 
-local function NDQOLCP_fake_script() -- CloseButton.LocalScript 
-	local script = Instance.new('LocalScript', CloseButton)
+local function KVOESS_fake_script() -- TextButton_5.Twin 
+	local script = Instance.new('LocalScript', TextButton_5)
 
-	local bigbox = script.Parent.Parent.Parent.Parent.BigBox
-	local openbtn = script.Parent.Parent.Parent.Parent.SmallButton
+	-- Reference to the button
+	local button = script.Parent
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		bigbox.Visible = false
-		openbtn.Visible = true
-	end)
+	-- Store the default color
+	local defaultColor = button.BackgroundColor3
+	
+	-- Variable to track state
+	local isGreen = false
+	
+	-- Function to handle button click
+	local function onButtonClick()
+		if isGreen then
+			-- Change back to the default color
+			button.BackgroundColor3 = defaultColor
+		else
+			-- Change to green
+			button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		end
+		-- Toggle the state
+		isGreen = not isGreen
+	end
+	
+	-- Connect the function to the button's MouseButton1Click event
+	button.MouseButton1Click:Connect(onButtonClick)
+	
 end
-coroutine.wrap(NDQOLCP_fake_script)()
-local function WYWD_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(KVOESS_fake_script)()
+local function GHFRZ_fake_script() -- TextButton_5.FishScript 
+	local script = Instance.new('LocalScript', TextButton_5)
 
 	local Players = game:GetService('Players')
 	local CoreGui = game:GetService('StarterGui')
@@ -264,7 +307,7 @@ local function WYWD_fake_script() -- TextButton.LocalScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.1)
+				task.wait(0.1
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
@@ -318,16 +361,4 @@ local function WYWD_fake_script() -- TextButton.LocalScript
 	end
 	
 end
-coroutine.wrap(WYWD_fake_script)()
-local function GKGPRH_fake_script() -- SmallButton.LocalScript 
-	local script = Instance.new('LocalScript', SmallButton)
-
-	local frame = script.Parent.Parent.BigBox
-	local closebtn = script.Parent.Parent.SmallButton
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		frame.Visible = true	
-		closebtn.Visible = false
-	end)
-end
-coroutine.wrap(GKGPRH_fake_script)()
+coroutine.wrap(GHFRZ_fake_script)()
