@@ -11,13 +11,10 @@ local ImageLabel = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local ImageLabel_2 = Instance.new("ImageLabel")
 local TextButton_3 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local ImageLabel_3 = Instance.new("ImageLabel")
 local TextButton_4 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local ImageLabel_4 = Instance.new("ImageLabel")
 local FishingFrame = Instance.new("Frame")
 local Frame_3 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
@@ -25,6 +22,7 @@ local TextLabel_2 = Instance.new("TextLabel")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local TextButton_5 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
@@ -35,8 +33,8 @@ Canva.Parent = ScreenGui
 Canva.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Canva.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Canva.BorderSizePixel = 0
-Canva.Position = UDim2.new(0.254141569, 0, 0.182108626, 0)
-Canva.Size = UDim2.new(0.491340369, 0, 0.63258785, 0)
+Canva.Position = UDim2.new(0.254141569, 0, 0.146166131, 0)
+Canva.Size = UDim2.new(0.491340369, 0, 0.706869006, 0)
 
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = Canva
@@ -45,7 +43,7 @@ Frame.Parent = Canva
 Frame.BackgroundColor3 = Color3.fromRGB(222, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.926436782, 0, 0.0303030312, 0)
+Frame.Position = UDim2.new(0.926436782, 0, 0.0303030238, 0)
 Frame.Size = UDim2.new(0.0574712642, 0, 0.0795454532, 0)
 
 UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -76,7 +74,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0137931034, 0, 0.0303030312, 0)
+TextLabel.Position = UDim2.new(0.0137931034, 0, 0.0303030238, 0)
 TextLabel.Size = UDim2.new(0.158620685, 0, 0.0795454532, 0)
 TextLabel.Font = Enum.Font.FredokaOne
 TextLabel.Text = "Arcane"
@@ -86,7 +84,7 @@ TextLabel.TextSize = 20.000
 ImageLabel.Parent = Canva
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Position = UDim2.new(0.172413796, 0, 0.0303030312, 0)
+ImageLabel.Position = UDim2.new(0.172413796, 0, 0.0303030238, 0)
 ImageLabel.Size = UDim2.new(0.0666666701, 0, 0.0795454532, 0)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=6022668949"
 
@@ -94,48 +92,36 @@ Frame_2.Parent = Canva
 Frame_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0137931034, 0, 0.143939391, 0)
+Frame_2.Position = UDim2.new(0.0137931034, 0, 0.143939361, 0)
 Frame_2.Size = UDim2.new(0.239080459, 0, 0.829545438, 0)
 
 TextButton_2.Parent = Frame_2
 TextButton_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
-TextButton_2.Position = UDim2.new(0.0384615399, 0, 0.0273972601, 0)
+TextButton_2.Position = UDim2.new(0.0384615399, 0, 0.0273972545, 0)
 TextButton_2.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
 TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "   Fishing"
+TextButton_2.Text = "Fishing"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 15.000
 
 UICorner_4.CornerRadius = UDim.new(0, 5)
 UICorner_4.Parent = TextButton_2
 
-ImageLabel_2.Parent = TextButton_2
-ImageLabel_2.BackgroundTransparency = 1.000
-ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Size = UDim2.new(0.3125, 0, 1, 0)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6031094681"
-
 TextButton_3.Parent = Frame_2
 TextButton_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
-TextButton_3.Position = UDim2.new(0.0384615399, 0, 0.173515975, 0)
+TextButton_3.Position = UDim2.new(0.0384615399, 0, 0.173515946, 0)
 TextButton_3.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
 TextButton_3.Font = Enum.Font.FredokaOne
-TextButton_3.Text = "    Teleport"
+TextButton_3.Text = "Teleport"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 15.000
 
 UICorner_5.CornerRadius = UDim.new(0, 5)
 UICorner_5.Parent = TextButton_3
-
-ImageLabel_3.Parent = TextButton_3
-ImageLabel_3.BackgroundTransparency = 1.000
-ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Size = UDim2.new(0.3125, 0, 1, 0)
-ImageLabel_3.Image = "http://www.roblox.com/asset/?id=6031094681"
 
 TextButton_4.Parent = Frame_2
 TextButton_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
@@ -144,32 +130,26 @@ TextButton_4.BorderSizePixel = 0
 TextButton_4.Position = UDim2.new(0.0384615399, 0, 0.319634706, 0)
 TextButton_4.Size = UDim2.new(0.923076928, 0, 0.118721463, 0)
 TextButton_4.Font = Enum.Font.FredokaOne
-TextButton_4.Text = "   Settings"
+TextButton_4.Text = "Settings"
 TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_4.TextSize = 15.000
 
 UICorner_6.CornerRadius = UDim.new(0, 5)
 UICorner_6.Parent = TextButton_4
 
-ImageLabel_4.Parent = TextButton_4
-ImageLabel_4.BackgroundTransparency = 1.000
-ImageLabel_4.BorderSizePixel = 0
-ImageLabel_4.Size = UDim2.new(0.3125, 0, 1, 0)
-ImageLabel_4.Image = "http://www.roblox.com/asset/?id=6031094681"
-
 FishingFrame.Name = "FishingFrame"
 FishingFrame.Parent = Canva
 FishingFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
 FishingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 FishingFrame.BorderSizePixel = 0
-FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939391, 0)
+FishingFrame.Position = UDim2.new(0.266666681, 0, 0.143939361, 0)
 FishingFrame.Size = UDim2.new(0.717241406, 0, 0.829545438, 0)
 
 Frame_3.Parent = FishingFrame
 Frame_3.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
 Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0.0192307699, 0, 0.0273972601, 0)
+Frame_3.Position = UDim2.new(0.0192307699, 0, 0.0273972545, 0)
 Frame_3.Size = UDim2.new(0.961538434, 0, 0.118721463, 0)
 
 UICorner_7.CornerRadius = UDim.new(0, 4)
@@ -180,7 +160,7 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Size = UDim2.new(0.24333334, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(0.24333334, 0, 0.894915223, 0)
 TextLabel_2.Font = Enum.Font.FredokaOne
 TextLabel_2.Text = "Auto Farm"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -193,7 +173,7 @@ TextButton_5.Parent = Frame_3
 TextButton_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_5.BorderSizePixel = 0
-TextButton_5.Position = UDim2.new(0.863333344, 0, 0.269230783, 0)
+TextButton_5.Position = UDim2.new(0.863333344, 0, 0.269230694, 0)
 TextButton_5.Size = UDim2.new(0.116666667, 0, 0.461538464, 0)
 TextButton_5.Font = Enum.Font.SourceSans
 TextButton_5.Text = ""
@@ -202,20 +182,33 @@ TextButton_5.TextSize = 14.000
 
 UICorner_8.Parent = TextButton_5
 
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.815512061, 0, 0.63258785, 0)
+ImageButton.Size = UDim2.new(0.0564759038, 0, 0.119808301, 0)
+ImageButton.Visible = false
+ImageButton.Image = "http://www.roblox.com/asset/?id=6031094681"
+ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
+
 -- Scripts:
 
-local function NLLRBD_fake_script() -- TextButton.LocalScript 
+local function LXHI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
+	local openbtn = script.Parent.Parent.Parent.Parent.ImageButton
 	
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		frame.Visible = false	
+		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(NLLRBD_fake_script)()
-local function KWZEOH_fake_script() -- TextButton_5.Twin 
+coroutine.wrap(LXHI_fake_script)()
+local function CKXIOFZ_fake_script() -- TextButton_5.Twin 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	-- Reference to the button
@@ -244,8 +237,8 @@ local function KWZEOH_fake_script() -- TextButton_5.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(KWZEOH_fake_script)()
-local function ODOV_fake_script() -- TextButton_5.FishScript 
+coroutine.wrap(CKXIOFZ_fake_script)()
+local function GAEAKNX_fake_script() -- TextButton_5.FishScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local Players = game:GetService('Players')
@@ -376,4 +369,69 @@ local function ODOV_fake_script() -- TextButton_5.FishScript
 	end
 	
 end
-coroutine.wrap(ODOV_fake_script)()
+coroutine.wrap(GAEAKNX_fake_script)()
+local function ECZRXAL_fake_script() -- ImageButton.Draggable 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local frame = script.Parent -- The frame to make draggable
+	
+	local UIS = game:GetService("UserInputService") -- Get UserInputService
+	local dragging = false
+	local dragInput
+	local dragStart
+	local startPos
+	
+	-- Function to update the frame's position
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	-- Mouse down / touch began
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	-- Input changed (detect mouse/touch movement)
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	-- Update frame position when dragging
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(ECZRXAL_fake_script)()
+local function YUITJ_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local openbtn = script.Parent.Parent.ImageButton
+	local frame = script.Parent.Parent.Canva
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = true	
+		openbtn.Visible = false	
+	end)
+end
+coroutine.wrap(YUITJ_fake_script)()
