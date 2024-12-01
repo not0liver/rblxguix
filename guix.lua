@@ -204,7 +204,7 @@ UICorner_8.Parent = TextButton_5
 
 -- Scripts:
 
-local function WIGKH_fake_script() -- TextButton.LocalScript 
+local function NLLRBD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -214,8 +214,8 @@ local function WIGKH_fake_script() -- TextButton.LocalScript
 		frame.Visible = false	
 	end)
 end
-coroutine.wrap(WIGKH_fake_script)()
-local function QTJHF_fake_script() -- TextButton_5.Twin 
+coroutine.wrap(NLLRBD_fake_script)()
+local function KWZEOH_fake_script() -- TextButton_5.Twin 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	-- Reference to the button
@@ -244,8 +244,8 @@ local function QTJHF_fake_script() -- TextButton_5.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(QTJHF_fake_script)()
-local function CPTARGB_fake_script() -- TextButton_5.FishScript 
+coroutine.wrap(KWZEOH_fake_script)()
+local function ODOV_fake_script() -- TextButton_5.FishScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local Players = game:GetService('Players')
@@ -376,4 +376,4 @@ local function CPTARGB_fake_script() -- TextButton_5.FishScript
 	end
 	
 end
-coroutine.wrap(CPTARGB_fake_script)()
+coroutine.wrap(ODOV_fake_script)()
