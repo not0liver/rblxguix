@@ -22,6 +22,7 @@ local FishingFrame = Instance.new("Frame")
 local Frame_3 = Instance.new("Frame")
 local UICorner_7 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local TextButton_5 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 
@@ -185,6 +186,9 @@ TextLabel_2.Text = "Auto Farm"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 15.000
 
+UIAspectRatioConstraint.Parent = TextLabel_2
+UIAspectRatioConstraint.AspectRatio = 2.808
+
 TextButton_5.Parent = Frame_3
 TextButton_5.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -200,7 +204,7 @@ UICorner_8.Parent = TextButton_5
 
 -- Scripts:
 
-local function WRWVL_fake_script() -- TextButton.LocalScript 
+local function WIGKH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -210,8 +214,8 @@ local function WRWVL_fake_script() -- TextButton.LocalScript
 		frame.Visible = false	
 	end)
 end
-coroutine.wrap(WRWVL_fake_script)()
-local function RIROOH_fake_script() -- TextButton_5.Twin 
+coroutine.wrap(WIGKH_fake_script)()
+local function QTJHF_fake_script() -- TextButton_5.Twin 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	-- Reference to the button
@@ -240,8 +244,8 @@ local function RIROOH_fake_script() -- TextButton_5.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(RIROOH_fake_script)()
-local function MDGEGC_fake_script() -- TextButton_5.FishScript 
+coroutine.wrap(QTJHF_fake_script)()
+local function CPTARGB_fake_script() -- TextButton_5.FishScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local Players = game:GetService('Players')
@@ -318,7 +322,7 @@ local function MDGEGC_fake_script() -- TextButton_5.FishScript
 	LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
 		if Enabled then
 			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' then
-				task.wait(0.1)
+				task.wait(0.3)
 				GuiService.SelectedObject = Descendant
 				VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Return, false, game)
 				VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Return, false, game)
@@ -372,4 +376,4 @@ local function MDGEGC_fake_script() -- TextButton_5.FishScript
 	end
 	
 end
-coroutine.wrap(MDGEGC_fake_script)()
+coroutine.wrap(CPTARGB_fake_script)()
