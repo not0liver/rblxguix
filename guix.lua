@@ -52,20 +52,33 @@ local SettingsFrame = Instance.new("Frame")
 local Title_3 = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
-local Frame_4 = Instance.new("Frame")
+local SmoothTextures = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
 local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local TextButton_7 = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
-local Frame_5 = Instance.new("Frame")
+local RemoveParticles = Instance.new("Frame")
 local UICorner_19 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
 local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
 local TextButton_8 = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local RemoveShadows = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local TextButton_9 = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local ReduleLoad = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_13 = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local ImageButton = Instance.new("ImageButton")
 
 --Properties:
@@ -460,17 +473,18 @@ TextLabel_9.Text = "Optimization"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 15.000
 
-Frame_4.Parent = SettingsFrame
-Frame_4.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
-Frame_4.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+SmoothTextures.Name = "Smooth Textures"
+SmoothTextures.Parent = SettingsFrame
+SmoothTextures.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+SmoothTextures.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SmoothTextures.BorderSizePixel = 0
+SmoothTextures.Position = UDim2.new(0.0192307699, 0, 0.171428576, 0)
+SmoothTextures.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
 UICorner_17.CornerRadius = UDim.new(0, 5)
-UICorner_17.Parent = Frame_4
+UICorner_17.Parent = SmoothTextures
 
-TextLabel_10.Parent = Frame_4
+TextLabel_10.Parent = SmoothTextures
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BackgroundTransparency = 1.000
 TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -487,7 +501,7 @@ TextLabel_10.TextWrapped = true
 UITextSizeConstraint_2.Parent = TextLabel_10
 UITextSizeConstraint_2.MaxTextSize = 15
 
-TextButton_7.Parent = Frame_4
+TextButton_7.Parent = SmoothTextures
 TextButton_7.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
@@ -505,17 +519,18 @@ UICorner_18.Parent = TextButton_7
 UITextSizeConstraint_3.Parent = TextButton_7
 UITextSizeConstraint_3.MaxTextSize = 14
 
-Frame_5.Parent = SettingsFrame
-Frame_5.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_5.BorderSizePixel = 0
-Frame_5.Position = UDim2.new(0.0189999994, 0, 0.314999998, 0)
-Frame_5.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+RemoveParticles.Name = "Remove Particles"
+RemoveParticles.Parent = SettingsFrame
+RemoveParticles.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+RemoveParticles.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RemoveParticles.BorderSizePixel = 0
+RemoveParticles.Position = UDim2.new(0.0189999994, 0, 0.314999998, 0)
+RemoveParticles.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
 
 UICorner_19.CornerRadius = UDim.new(0, 5)
-UICorner_19.Parent = Frame_5
+UICorner_19.Parent = RemoveParticles
 
-TextLabel_11.Parent = Frame_5
+TextLabel_11.Parent = RemoveParticles
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.BackgroundTransparency = 1.000
 TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -532,7 +547,7 @@ TextLabel_11.TextWrapped = true
 UITextSizeConstraint_4.Parent = TextLabel_11
 UITextSizeConstraint_4.MaxTextSize = 15
 
-TextButton_8.Parent = Frame_5
+TextButton_8.Parent = RemoveParticles
 TextButton_8.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_8.BorderSizePixel = 0
@@ -550,6 +565,97 @@ UICorner_20.Parent = TextButton_8
 UITextSizeConstraint_5.Parent = TextButton_8
 UITextSizeConstraint_5.MaxTextSize = 14
 
+RemoveShadows.Name = "Remove Shadows"
+RemoveShadows.Parent = SettingsFrame
+RemoveShadows.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+RemoveShadows.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RemoveShadows.BorderSizePixel = 0
+RemoveShadows.Position = UDim2.new(0.0189999994, 0, 0.460000008, 0)
+RemoveShadows.Size = UDim2.new(0.961538434, 0, 0.118367344, 0)
+
+UICorner_21.CornerRadius = UDim.new(0, 5)
+UICorner_21.Parent = RemoveShadows
+
+TextLabel_12.Parent = RemoveShadows
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.0333333351, 0, 0, 0)
+TextLabel_12.Size = UDim2.new(0.336666673, 0, 1, 0)
+TextLabel_12.Font = Enum.Font.FredokaOne
+TextLabel_12.Text = "Remove Shadows"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 15.000
+TextLabel_12.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = TextLabel_12
+UITextSizeConstraint_6.MaxTextSize = 15
+
+TextButton_9.Parent = RemoveShadows
+TextButton_9.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.856666684, 0, 0.241379306, 0)
+TextButton_9.Size = UDim2.new(0.116999991, 0, 0.462000012, 0)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = ""
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+UICorner_22.Parent = TextButton_9
+
+UITextSizeConstraint_7.Parent = TextButton_9
+UITextSizeConstraint_7.MaxTextSize = 14
+
+ReduleLoad.Name = "Redule Load"
+ReduleLoad.Parent = SettingsFrame
+ReduleLoad.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
+ReduleLoad.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ReduleLoad.BorderSizePixel = 0
+ReduleLoad.Position = UDim2.new(0.0190000292, 0, 0.602857172, 0)
+ReduleLoad.Size = UDim2.new(0.962000012, 0, 0.118000001, 0)
+
+UICorner_23.CornerRadius = UDim.new(0, 5)
+UICorner_23.Parent = ReduleLoad
+
+TextLabel_13.Parent = ReduleLoad
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0, 0, 0.214617953, 0)
+TextLabel_13.Size = UDim2.new(0.336666673, 0, 0.520833313, 0)
+TextLabel_13.Font = Enum.Font.FredokaOne
+TextLabel_13.Text = "Reduce Load"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 15.000
+TextLabel_13.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = TextLabel_13
+UITextSizeConstraint_8.MaxTextSize = 15
+
+TextBox.Parent = ReduleLoad
+TextBox.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.816668093, 0, 0.261421442, 0)
+TextBox.Size = UDim2.new(0.15366669, 0, 0.462000012, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Distance"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = TextBox
+UITextSizeConstraint_9.MaxTextSize = 14
+
 ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.BackgroundTransparency = 1.000
@@ -563,7 +669,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function UMHZ_fake_script() -- TextButton.LocalScript 
+local function UUWKWVH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -575,8 +681,8 @@ local function UMHZ_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(UMHZ_fake_script)()
-local function RIRAD_fake_script() -- Fisch.FisCode 
+coroutine.wrap(UUWKWVH_fake_script)()
+local function XTJXQMR_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -589,8 +695,8 @@ local function RIRAD_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(RIRAD_fake_script)()
-local function FMKGLX_fake_script() -- Teleport.TelCode 
+coroutine.wrap(XTJXQMR_fake_script)()
+local function AEDXEQ_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -603,8 +709,8 @@ local function FMKGLX_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(FMKGLX_fake_script)()
-local function DGMX_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(AEDXEQ_fake_script)()
+local function ECBJQL_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -617,8 +723,8 @@ local function DGMX_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(DGMX_fake_script)()
-local function QOHKL_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(ECBJQL_fake_script)()
+local function HEDM_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -647,8 +753,8 @@ local function QOHKL_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(QOHKL_fake_script)()
-local function PDZL_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(HEDM_fake_script)()
+local function AYJASYM_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -779,8 +885,8 @@ local function PDZL_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(PDZL_fake_script)()
-local function ENQKP_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(AYJASYM_fake_script)()
+local function SYMRW_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -809,8 +915,8 @@ local function ENQKP_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(ENQKP_fake_script)()
-local function SUXZ_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(SYMRW_fake_script)()
+local function NOAFWV_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -941,8 +1047,8 @@ local function SUXZ_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(SUXZ_fake_script)()
-local function QOEWLM_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(NOAFWV_fake_script)()
+local function UJRRBR_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -957,8 +1063,8 @@ local function QOEWLM_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(QOEWLM_fake_script)()
-local function YXSUCVZ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(UJRRBR_fake_script)()
+local function HSTZV_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -1001,8 +1107,8 @@ local function YXSUCVZ_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(YXSUCVZ_fake_script)()
-local function IVUIHXP_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(HSTZV_fake_script)()
+local function OQHPQUD_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Get the TextButton instance
@@ -1017,8 +1123,8 @@ local function IVUIHXP_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(IVUIHXP_fake_script)()
-local function FJCL_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(OQHPQUD_fake_script)()
+local function BAVOZK_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Make sure you're in Roblox Studio, and the script is attached to a button
@@ -1039,8 +1145,143 @@ local function FJCL_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(disableParticleEmitters)
 	
 end
-coroutine.wrap(FJCL_fake_script)()
-local function TMUTTI_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(BAVOZK_fake_script)()
+local function GTIWM_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	-- Get the TextButton instance
+	local button = script.Parent
+	
+	-- Function to change the button's color to green when clicked
+	local function onClick()
+		button.BackgroundColor3 = Color3.fromRGB(0, 255, 0)  -- Green color
+	end
+	
+	-- Connect the button's MouseButton1Click event to the onClick function
+	button.MouseButton1Click:Connect(onClick)
+	
+end
+coroutine.wrap(GTIWM_fake_script)()
+local function ELGW_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local button = script.Parent -- Button that triggers the shadow removal
+	
+	-- Function to disable shadows when the button is clicked
+	local function disableShadows()
+		local lighting = game:GetService("Lighting")
+	
+		-- Disable global shadows
+		lighting.GlobalShadows = false
+	
+	end
+	
+	-- Connect the function to the button click
+	button.MouseButton1Click:Connect(disableShadows)
+	
+end
+coroutine.wrap(ELGW_fake_script)()
+local function LYXCM_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	-- Variables
+	local detectionRange = 500 -- Initial distance to make the part visible
+	local debounce = false -- To avoid rapid visibility toggling
+	local isOptimizationEnabled = true -- Assume optimization is enabled for the example
+	
+	-- Reference to the TextBox
+	local textBox = script.Parent -- The LocalScript is inside the TextBox
+	local player = game.Players.LocalPlayer -- Get the local player
+	
+	-- Function to check if the part is part of a player's character
+	local function isPlayerPart(part)
+		-- Check if the part belongs to a player (i.e., part is in a character model)
+		local parent = part.Parent
+		if parent and parent:FindFirstChild("Humanoid") then
+			return true -- It’s a part of a player’s character
+		end
+		return false
+	end
+	
+	-- Function to check if any part is within range of another part
+	local function isPartNearby(part)
+		-- Loop through all parts in the workspace and check distances
+		for _, object in ipairs(workspace:GetDescendants()) do
+			if object:IsA("BasePart") and object ~= part then  -- Check if it's another part, excluding the target part
+				if not isPlayerPart(object) then -- Exclude player parts
+					local distance = (object.Position - part.Position).Magnitude
+					if distance <= detectionRange then
+						return true
+					end
+				end
+			end
+		end
+		return false
+	end
+	
+	-- Function to toggle visibility for all parts in the workspace
+	local function updateVisibility()
+		-- Prevent continuous updates with debounce
+		if debounce then return end
+		debounce = true
+	
+		-- Loop through all parts in the workspace to toggle visibility
+		for _, object in ipairs(workspace:GetDescendants()) do
+			if object:IsA("BasePart") and not isPlayerPart(object) then
+				if isPartNearby(object) then
+					object.Transparency = 0 -- Visible
+				else
+					object.Transparency = 1 -- Invisible
+				end
+			end
+		end
+	
+		-- Allow the next update after a small delay
+		wait(0.1) -- This creates a small delay before the debounce flag is reset
+		debounce = false
+	end
+	
+	-- Function to update detectionRange based on TextBox input
+	local function updateDetectionRange()
+		local input = tonumber(textBox.Text) -- Get the text from the TextBox
+		if input then
+			detectionRange = input -- Update detectionRange if the input is a valid number
+			print("Detection range updated to: " .. detectionRange)
+			-- Immediately update visibility after range update
+			updateVisibility()
+		else
+			-- Reject non-numeric input
+			textBox.Text = tostring(detectionRange) -- Restore the previous valid value
+			print("Please enter a valid number.")
+		end
+	end
+	
+	-- Function to allow only numeric input in the TextBox
+	local function restrictNonNumericInput()
+		local input = textBox.Text
+		-- Only allow digits and one decimal point
+		if not input:match("^[0-9]*%.?[0-9]*$") then
+			-- Remove any invalid character
+			textBox.Text = input:sub(1, -2) 
+		end
+	end
+	
+	-- Connect TextBox input to updateDetectionRange function when focus is lost
+	textBox.FocusLost:Connect(updateDetectionRange)
+	
+	-- Connect TextBox input to restrict non-numeric characters while typing
+	textBox:GetPropertyChangedSignal("Text"):Connect(restrictNonNumericInput)
+	
+	-- Continuous check using RunService to keep visibility updated dynamically
+	game:GetService("RunService").Heartbeat:Connect(function()
+		if isOptimizationEnabled then
+			updateVisibility() -- This keeps checking and updating the visibility
+		end
+	end)
+	
+end
+coroutine.wrap(LYXCM_fake_script)()
+local function JHMV_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -1092,8 +1333,8 @@ local function TMUTTI_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(TMUTTI_fake_script)()
-local function IZQM_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(JHMV_fake_script)()
+local function YDHZ_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -1104,4 +1345,4 @@ local function IZQM_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(IZQM_fake_script)()
+coroutine.wrap(YDHZ_fake_script)()
