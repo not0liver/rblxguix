@@ -679,7 +679,7 @@ TextButton_10.TextSize = 14.000
 
 -- Scripts:
 
-local function IBZNA_fake_script() -- TextButton.LocalScript 
+local function NCWCHJW_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -691,8 +691,8 @@ local function IBZNA_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(IBZNA_fake_script)()
-local function LSRW_fake_script() -- Fisch.FisCode 
+coroutine.wrap(NCWCHJW_fake_script)()
+local function JLGUTKQ_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -705,8 +705,8 @@ local function LSRW_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(LSRW_fake_script)()
-local function HIGEHSK_fake_script() -- Teleport.TelCode 
+coroutine.wrap(JLGUTKQ_fake_script)()
+local function MLXB_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -719,8 +719,8 @@ local function HIGEHSK_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(HIGEHSK_fake_script)()
-local function AUZPVRP_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(MLXB_fake_script)()
+local function MIJL_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -733,8 +733,8 @@ local function AUZPVRP_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(AUZPVRP_fake_script)()
-local function MBEPBDX_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(MIJL_fake_script)()
+local function MKZBWV_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -763,8 +763,8 @@ local function MBEPBDX_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(MBEPBDX_fake_script)()
-local function VDMJX_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(MKZBWV_fake_script)()
+local function LPLGKOJ_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -895,8 +895,8 @@ local function VDMJX_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(VDMJX_fake_script)()
-local function OGJP_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(LPLGKOJ_fake_script)()
+local function BOWEA_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -925,8 +925,8 @@ local function OGJP_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(OGJP_fake_script)()
-local function GORV_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(BOWEA_fake_script)()
+local function CDCRBX_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -1057,8 +1057,8 @@ local function GORV_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(GORV_fake_script)()
-local function BLYXIG_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(CDCRBX_fake_script)()
+local function QJQMTIS_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -1073,8 +1073,8 @@ local function BLYXIG_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(BLYXIG_fake_script)()
-local function WKSC_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(QJQMTIS_fake_script)()
+local function LKTLQCC_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -1117,8 +1117,8 @@ local function WKSC_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(WKSC_fake_script)()
-local function NCCLII_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(LKTLQCC_fake_script)()
+local function GWKKA_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Get the TextButton instance
@@ -1133,8 +1133,8 @@ local function NCCLII_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(NCCLII_fake_script)()
-local function NMVTTAA_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(GWKKA_fake_script)()
+local function VHEO_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Make sure you're in Roblox Studio, and the script is attached to a button
@@ -1155,8 +1155,8 @@ local function NMVTTAA_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(disableParticleEmitters)
 	
 end
-coroutine.wrap(NMVTTAA_fake_script)()
-local function RAEF_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(VHEO_fake_script)()
+local function HZUTF_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	-- Get the TextButton instance
@@ -1171,8 +1171,8 @@ local function RAEF_fake_script() -- TextButton_9.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(RAEF_fake_script)()
-local function ELPH_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(HZUTF_fake_script)()
+local function YIHSKMX_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local button = script.Parent -- Button that triggers the shadow removal
@@ -1190,8 +1190,8 @@ local function ELPH_fake_script() -- TextButton_9.LocalScript
 	button.MouseButton1Click:Connect(disableShadows)
 	
 end
-coroutine.wrap(ELPH_fake_script)()
-local function YLQRTYG_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(YIHSKMX_fake_script)()
+local function FPQEA_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	local detectionRange = 100 -- Initial value (no update should happen until a valid number is entered)
@@ -1312,8 +1312,8 @@ local function YLQRTYG_fake_script() -- TextBox.LocalScript
 	
 	
 end
-coroutine.wrap(YLQRTYG_fake_script)()
-local function EVKPZIF_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(FPQEA_fake_script)()
+local function JUKLF_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -1365,8 +1365,8 @@ local function EVKPZIF_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(EVKPZIF_fake_script)()
-local function DVVYOD_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(JUKLF_fake_script)()
+local function WCJAL_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -1377,28 +1377,30 @@ local function DVVYOD_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(DVVYOD_fake_script)()
-local function SGFV_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(WCJAL_fake_script)()
+local function ORPDVWB_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	local button = script.Parent -- Reference to the TextButton
 	local rosLitBay = game.Workspace.world.map["Roslit Bay"]
 	
 	-- List of model names to destroy
-	local modelsToDestroy = {"Palm Tree", "Tree1", "Tree2", "Tree3", "BirchTree"}
+	local modelsToDestroy = {"Palm Tree", "Tree1", "Tree2", "Tree3"}
 	
 	-- When the button is clicked
 	button.MouseButton1Click:Connect(function()
 		if rosLitBay then
-			-- Iterate through the models and destroy each one
-			for _, modelName in pairs(modelsToDestroy) do
-				local model = rosLitBay:FindFirstChild(modelName)
-				if model then
-					model:Destroy() -- Destroy the specific model
+			-- Iterate through all children of "Roslit Bay"
+			for _, child in pairs(rosLitBay:GetChildren()) do
+				-- Check if the child's name is in the modelsToDestroy list
+				for _, modelName in pairs(modelsToDestroy) do
+					if child.Name == modelName then
+						child:Destroy() -- Destroy the model if the name matches
+					end
 				end
 			end
 		end
 	end)
 	
 end
-coroutine.wrap(SGFV_fake_script)()
+coroutine.wrap(ORPDVWB_fake_script)()
