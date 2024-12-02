@@ -663,7 +663,7 @@ ImageButton.ImageColor3 = Color3.fromRGB(178, 138, 99)
 
 -- Scripts:
 
-local function POCJW_fake_script() -- TextButton.LocalScript 
+local function RUFEDC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local frame = script.Parent.Parent.Parent.Parent.Canva
@@ -675,8 +675,8 @@ local function POCJW_fake_script() -- TextButton.LocalScript
 		openbtn.Visible = true	
 	end)
 end
-coroutine.wrap(POCJW_fake_script)()
-local function MDZPN_fake_script() -- Fisch.FisCode 
+coroutine.wrap(RUFEDC_fake_script)()
+local function UOBTM_fake_script() -- Fisch.FisCode 
 	local script = Instance.new('LocalScript', Fisch)
 
 	local fishframe = script.Parent.Parent.Parent.FishingFrame
@@ -689,8 +689,8 @@ local function MDZPN_fake_script() -- Fisch.FisCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(MDZPN_fake_script)()
-local function TQTK_fake_script() -- Teleport.TelCode 
+coroutine.wrap(UOBTM_fake_script)()
+local function BMFM_fake_script() -- Teleport.TelCode 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -703,8 +703,8 @@ local function TQTK_fake_script() -- Teleport.TelCode
 		settingsframe.Visible = false
 	end)
 end
-coroutine.wrap(TQTK_fake_script)()
-local function YMXYQ_fake_script() -- Settings.SettingsCode 
+coroutine.wrap(BMFM_fake_script)()
+local function BMOFVH_fake_script() -- Settings.SettingsCode 
 	local script = Instance.new('LocalScript', Settings)
 
 	local teleportframe = script.Parent.Parent.Parent.TeleportFrame
@@ -717,8 +717,8 @@ local function YMXYQ_fake_script() -- Settings.SettingsCode
 		fishframe.Visible = false
 	end)
 end
-coroutine.wrap(YMXYQ_fake_script)()
-local function ERPPJC_fake_script() -- TextButton_2.Twin 
+coroutine.wrap(BMOFVH_fake_script)()
+local function NXTGJPR_fake_script() -- TextButton_2.Twin 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	-- Reference to the button
@@ -747,8 +747,8 @@ local function ERPPJC_fake_script() -- TextButton_2.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(ERPPJC_fake_script)()
-local function HEZXGE_fake_script() -- TextButton_2.FishScript 
+coroutine.wrap(NXTGJPR_fake_script)()
+local function IBYRHNA_fake_script() -- TextButton_2.FishScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local Players = game:GetService('Players')
@@ -879,8 +879,8 @@ local function HEZXGE_fake_script() -- TextButton_2.FishScript
 	end
 	
 end
-coroutine.wrap(HEZXGE_fake_script)()
-local function YXXWTQC_fake_script() -- TextButton_3.Twin 
+coroutine.wrap(IBYRHNA_fake_script)()
+local function GXXK_fake_script() -- TextButton_3.Twin 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	-- Reference to the button
@@ -909,8 +909,8 @@ local function YXXWTQC_fake_script() -- TextButton_3.Twin
 	button.MouseButton1Click:Connect(onButtonClick)
 	
 end
-coroutine.wrap(YXXWTQC_fake_script)()
-local function GXSSVJ_fake_script() -- TextButton_3.FishScript 
+coroutine.wrap(GXXK_fake_script)()
+local function TGCYPG_fake_script() -- TextButton_3.FishScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local Players = game:GetService('Players')
@@ -1041,8 +1041,8 @@ local function GXSSVJ_fake_script() -- TextButton_3.FishScript
 	end
 	
 end
-coroutine.wrap(GXSSVJ_fake_script)()
-local function VZPNBAQ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(TGCYPG_fake_script)()
+local function CDBDQZR_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- Get the TextButton instance
@@ -1057,8 +1057,8 @@ local function VZPNBAQ_fake_script() -- TextButton_7.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(VZPNBAQ_fake_script)()
-local function JVAYEDO_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(CDBDQZR_fake_script)()
+local function PLHY_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	-- UI Button Script
@@ -1101,8 +1101,8 @@ local function JVAYEDO_fake_script() -- TextButton_7.LocalScript
 	end)
 	
 end
-coroutine.wrap(JVAYEDO_fake_script)()
-local function UUMI_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(PLHY_fake_script)()
+local function ARTT_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Get the TextButton instance
@@ -1117,8 +1117,8 @@ local function UUMI_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(UUMI_fake_script)()
-local function GZFAZFJ_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(ARTT_fake_script)()
+local function ABGV_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	-- Make sure you're in Roblox Studio, and the script is attached to a button
@@ -1139,8 +1139,8 @@ local function GZFAZFJ_fake_script() -- TextButton_8.LocalScript
 	button.MouseButton1Click:Connect(disableParticleEmitters)
 	
 end
-coroutine.wrap(GZFAZFJ_fake_script)()
-local function HBPC_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(ABGV_fake_script)()
+local function RHVD_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	-- Get the TextButton instance
@@ -1155,8 +1155,8 @@ local function HBPC_fake_script() -- TextButton_9.LocalScript
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(HBPC_fake_script)()
-local function AOAMOE_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(RHVD_fake_script)()
+local function OSIHGH_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local button = script.Parent -- Button that triggers the shadow removal
@@ -1174,81 +1174,87 @@ local function AOAMOE_fake_script() -- TextButton_9.LocalScript
 	button.MouseButton1Click:Connect(disableShadows)
 	
 end
-coroutine.wrap(AOAMOE_fake_script)()
-local function QWZN_fake_script() -- TextBox.LocalScript 
+coroutine.wrap(OSIHGH_fake_script)()
+local function KWAFBC_fake_script() -- TextBox.LocalScript 
 	local script = Instance.new('LocalScript', TextBox)
 
 	-- Variables
-	local detectionRange = 500 -- Initial distance to make the part visible
-	local debounce = false -- To avoid rapid visibility toggling
-	local isOptimizationEnabled = true -- Assume optimization is enabled for the example
-	local updateInterval = 0.5 -- Update every 0.5 seconds to reduce lag
+	local detectionRange = 500
+	local debounce = false
+	local isOptimizationEnabled = true
+	local updateInterval = 1 -- Update visibility every second
 	
-	-- Reference to the TextBox
-	local textBox = script.Parent -- The LocalScript is inside the TextBox
-	local player = game.Players.LocalPlayer -- Get the local player
-	local character = player.Character or player.CharacterAdded:Wait() -- Wait for the character to load
-	local humanoidRootPart = character:WaitForChild("HumanoidRootPart") -- Reference to the player's HumanoidRootPart
+	-- Reference to the TextBox and player
+	local textBox = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	-- Cached part visibility states to avoid repeated checks
+	local lastVisibleParts = {}
 	
 	-- Function to check if the part is part of a player's character
 	local function isPlayerPart(part)
-		-- Check if the part belongs to a player (i.e., part is in a character model)
 		local parent = part.Parent
 		if parent and parent:FindFirstChild("Humanoid") then
-			return true -- It’s a part of a player’s character
+			return true
 		end
 		return false
 	end
 	
-	-- Function to toggle visibility for all parts in the workspace within the detection range
+	-- Function to check if any part is within range of another part
+	local function isPartNearby(part)
+		for _, object in ipairs(workspace:GetDescendants()) do
+			if object:IsA("BasePart") and object ~= part then
+				if not isPlayerPart(object) then
+					local distance = (object.Position - part.Position).Magnitude
+					if distance <= detectionRange then
+						return true
+					end
+				end
+			end
+		end
+		return false
+	end
+	
+	-- Function to toggle visibility for parts based on proximity
 	local function updateVisibility()
-		-- Prevent continuous updates with debounce
 		if debounce then return end
 		debounce = true
 	
-		-- Get the player's position (HumanoidRootPart)
-		local playerPosition = humanoidRootPart.Position
-	
-		-- Loop through all parts in the workspace and toggle visibility based on distance
+		-- Only update parts that have changed visibility since the last check
 		for _, object in ipairs(workspace:GetDescendants()) do
 			if object:IsA("BasePart") and not isPlayerPart(object) then
-				-- Check if the part is within range of the player
-				local distance = (object.Position - playerPosition).Magnitude
-				if distance <= detectionRange then
-					object.Transparency = 0 -- Visible
-				else
-					object.Transparency = 1 -- Invisible
+				local partVisible = isPartNearby(object)
+				-- If visibility status has changed, update the part
+				if partVisible ~= lastVisibleParts[object] then
+					object.Transparency = partVisible and 0 or 1
+					lastVisibleParts[object] = partVisible
 				end
 			end
 		end
 	
-		-- Allow the next update after a small delay
-		wait(updateInterval) -- Update visibility at a fixed interval (e.g., 0.5 seconds)
+		-- Reset debounce after a delay
+		wait(updateInterval)
 		debounce = false
 	end
 	
 	-- Function to update detectionRange based on TextBox input
 	local function updateDetectionRange()
-		local input = tonumber(textBox.Text) -- Get the text from the TextBox
+		local input = tonumber(textBox.Text)
 		if input then
-			detectionRange = input -- Update detectionRange if the input is a valid number
+			detectionRange = input
 			print("Detection range updated to: " .. detectionRange)
-			-- Immediately update visibility after range update
-			updateVisibility()
+			updateVisibility() -- Immediately update visibility after range update
 		else
-			-- Reject non-numeric input
-			textBox.Text = tostring(detectionRange) -- Restore the previous valid value
+			textBox.Text = tostring(detectionRange) -- Restore valid value
 			print("Please enter a valid number.")
 		end
 	end
 	
-	-- Function to allow only numeric input in the TextBox
+	-- Function to restrict non-numeric input in TextBox
 	local function restrictNonNumericInput()
 		local input = textBox.Text
-		-- Only allow digits and one decimal point
 		if not input:match("^[0-9]*%.?[0-9]*$") then
-			-- Remove any invalid character
-			textBox.Text = input:sub(1, -2) 
+			textBox.Text = input:sub(1, -2)
 		end
 	end
 	
@@ -1258,16 +1264,16 @@ local function QWZN_fake_script() -- TextBox.LocalScript
 	-- Connect TextBox input to restrict non-numeric characters while typing
 	textBox:GetPropertyChangedSignal("Text"):Connect(restrictNonNumericInput)
 	
-	-- Continuous check using RunService to keep visibility updated dynamically
+	-- Continuous update with a slower interval (every `updateInterval` seconds)
 	game:GetService("RunService").Heartbeat:Connect(function()
 		if isOptimizationEnabled then
-			updateVisibility() -- This keeps checking and updating the visibility at intervals
+			updateVisibility() -- Update visibility less frequently
 		end
 	end)
 	
 end
-coroutine.wrap(QWZN_fake_script)()
-local function WKNYYSB_fake_script() -- ImageButton.Draggable 
+coroutine.wrap(KWAFBC_fake_script)()
+local function UTJBFX_fake_script() -- ImageButton.Draggable 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local frame = script.Parent -- The frame to make draggable
@@ -1319,8 +1325,8 @@ local function WKNYYSB_fake_script() -- ImageButton.Draggable
 	end)
 	
 end
-coroutine.wrap(WKNYYSB_fake_script)()
-local function KKMQQ_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(UTJBFX_fake_script)()
+local function BYKZHL_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	local openbtn = script.Parent.Parent.ImageButton
@@ -1331,4 +1337,4 @@ local function KKMQQ_fake_script() -- ImageButton.LocalScript
 		openbtn.Visible = false	
 	end)
 end
-coroutine.wrap(KKMQQ_fake_script)()
+coroutine.wrap(BYKZHL_fake_script)()
